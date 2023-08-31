@@ -562,12 +562,16 @@ video {
   }
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .relative {
   position: relative;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-4 {
@@ -626,16 +630,16 @@ video {
   max-height: 24rem;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-8 {
   width: 2rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .cursor-pointer {
@@ -688,33 +692,19 @@ video {
   border-bottom-width: 8px;
 }
 
-.border-none {
-  border-style: none;
-}
-
-.border-\[\#ff725e\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 114 94 / var(--tw-border-opacity));
-}
-
 .border-salmon {
   --tw-border-opacity: 1;
   border-color: hsl(7 100% 68% / var(--tw-border-opacity));
 }
 
-.bg-\[\#ff725e\] {
+.bg-salmon {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 114 94 / var(--tw-bg-opacity));
+  background-color: hsl(7 100% 68% / var(--tw-bg-opacity));
 }
 
 .bg-stone-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(28 25 23 / var(--tw-bg-opacity));
-}
-
-.bg-salmon {
-  --tw-bg-opacity: 1;
-  background-color: hsl(7 100% 68% / var(--tw-bg-opacity));
 }
 
 .p-10 {
@@ -791,10 +781,6 @@ video {
   text-transform: uppercase;
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
 .tracking-wider {
   letter-spacing: 0.05em;
 }
@@ -820,25 +806,29 @@ video {
   transition-duration: 500ms;
 }
 
+@media (min-width: 768px) {
+  .bg-hero {
+    width: 2000px;
+    height: 300px;
+    right: 50%;
+    position: absolute;
+    top: 11rem;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: hsl(7 100% 68% / var(--tw-bg-opacity));
+  }
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-\[\#b24f42\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(178 79 66 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-darkSalmon:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(7 46% 48% / var(--tw-bg-opacity));
-}
-
-.hover\:text-\[\#ff725e\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 114 94 / var(--tw-text-opacity));
 }
 
 .hover\:text-salmon:hover {
@@ -890,6 +880,11 @@ video {
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .md\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
 

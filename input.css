@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen(md) {
+    .bg-hero {
+        width: 2000px;
+        height: 300px;
+        right: 50%;
+        @apply absolute rounded-r-full top-44 bg-salmon;
+    }
+}
