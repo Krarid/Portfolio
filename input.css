@@ -7,6 +7,6 @@
         width: 2000px;
         height: 300px;
         right: 50%;
-        @apply absolute rounded-r-full top-44 bg-salmon;
+        @apply absolute rounded-r-full top-44 bg-grayish;
     }
 }

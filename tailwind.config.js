@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       colors: {
         salmon: 'hsl(7, 100%, 68%)',
-        darkSalmon: 'hsl(7, 46%, 48%)'
+        darkSalmon: 'hsl(7, 46%, 48%)',
+        grayish: 'hsl(200, 19%, 18%)'
       },
       fontFamily: {
         sans: ['Rubik', 'sans-serif'],
