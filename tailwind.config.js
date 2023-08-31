@@ -9,6 +9,10 @@ module.exports = {
       xl: '1440px'
     },
     extend: {
+      colors: {
+        salmon: 'hsl(7, 100%, 68%)',
+        darkSalmon: 'hsl(7, 46%, 48%)'
+      },
       fontFamily: {
         sans: ['Rubik', 'sans-serif'],
       }
