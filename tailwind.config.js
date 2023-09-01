@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         salmon: 'hsl(7, 100%, 68%)',
         darkSalmon: 'hsl(7, 46%, 48%)',
-        grayish: 'hsl(200, 19%, 18%)'
+        grayish: 'hsl(199, 20%, 18%)'
       },
       fontFamily: {
         sans: ['Rubik', 'sans-serif'],
