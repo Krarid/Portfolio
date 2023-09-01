@@ -17,6 +17,10 @@ module.exports = {
       fontFamily: {
         sans: ['Rubik', 'sans-serif'],
       },
+      fontSize: {
+        uxs: '0.5rem',
+        xxs: '0.65rem'
+      },
       rotate: {
         '360':'360deg',
       }
