@@ -16,6 +16,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Rubik', 'sans-serif'],
+      },
+      rotate: {
+        '360':'360deg',
       }
     },
   },
