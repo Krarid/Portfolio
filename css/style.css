@@ -720,6 +720,18 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.max-w-none {
+  max-width: none;
+}
+
+.max-w-screen-xl {
+  max-width: 1440px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -850,6 +862,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -888,6 +904,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-\[5\%\] {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -911,6 +932,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-\[50\%\] {
+  padding-top: 50%;
+  padding-bottom: 50%;
 }
 
 .pb-2 {
@@ -1003,14 +1029,9 @@ video {
   letter-spacing: 0.1em;
 }
 
-.text-slate-600 {
+.text-grayish {
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: hsl(199 20% 18% / var(--tw-text-opacity));
 }
 
 .text-slate-400 {
@@ -1018,19 +1039,9 @@ video {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
-.text-slate-200 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-.text-slate-300 {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
-.text-grayish {
-  --tw-text-opacity: 1;
-  color: hsl(199 20% 18% / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1241,6 +1252,10 @@ video {
     height: 24rem;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1257,12 +1272,20 @@ video {
     width: 20%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-2 {
@@ -1320,12 +1343,12 @@ video {
     line-height: 1.75rem;
   }
 
-  .lg\:text-xxs {
-    font-size: 0.65rem;
-  }
-
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .lg\:text-xxs {
+    font-size: 0.65rem;
   }
 }
