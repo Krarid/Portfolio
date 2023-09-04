@@ -650,26 +650,38 @@ video {
     background-color: hsl(199 20% 18% / var(--tw-bg-opacity));
   }
 
-  .bg-cert-r {
+  .bg-cert-1 {
     width: 2000px;
     height: 300px;
     left: 0%;
     position: absolute;
-    top: 24rem;
+    top: 33rem;
     border-top-left-radius: 9999px;
     border-bottom-left-radius: 9999px;
     --tw-bg-opacity: 1;
     background-color: hsl(199 20% 18% / var(--tw-bg-opacity));
   }
 
-  .bg-cert-l {
+  .bg-cert-2 {
     width: 2000px;
     height: 300px;
     right: 0%;
     position: absolute;
-    bottom: 24rem;
+    top: 87rem;
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: hsl(199 20% 18% / var(--tw-bg-opacity));
+  }
+
+  .bg-cert-3 {
+    width: 2000px;
+    height: 300px;
+    left: 0%;
+    position: absolute;
+    bottom: 27rem;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
     --tw-bg-opacity: 1;
     background-color: hsl(199 20% 18% / var(--tw-bg-opacity));
   }

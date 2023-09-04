@@ -10,18 +10,25 @@
         @apply absolute top-28 bg-grayish;
     }
 
-    .bg-cert-r {
+    .bg-cert-1 {
         width: 2000px;
         height: 300px;
         left: 0%;
-        @apply absolute rounded-l-full top-96 bg-grayish;
+        @apply absolute rounded-l-full top-[33rem] bg-grayish;
     }
 
-    .bg-cert-l {
+    .bg-cert-2 {
         width: 2000px;
         height: 300px;
         right: 0%;
-        @apply absolute rounded-r-full bottom-96 bg-grayish;
+        @apply absolute rounded-r-full top-[87rem] bg-grayish;
+    }
+
+    .bg-cert-3 {
+        width: 2000px;
+        height: 300px;
+        left: 0%;
+        @apply absolute rounded-l-full bottom-[27rem] bg-grayish;
     }
 }
 
