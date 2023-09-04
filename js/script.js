@@ -18,9 +18,9 @@ $( function() {
     })
 
     // Click on any certificate and then zoom in
-    $('.certificate').on('click', (e) => {
-        const certificate = $(e.target).attr('src')
-        $('#full-certificate').children('img').attr('src', certificate)
+    $('.certification-image').on('click', (e) => {
+        const certification = $(e.target).attr('src')
+        $('#full-certificate').children('img').attr('src', certification)
         $('#full-certificate').addClass('flex').removeClass('hidden')
     })
 
@@ -30,7 +30,7 @@ $( function() {
     })
 
     // Get rid of container when inner width is less than 768px
-    $(window).on('resize', () => {
+    $(window).on( 'load resize' , () => {
         if( window.innerWidth < 768 )
             $('#hero').removeClass('container', 'mx-auto')
         else
