@@ -1,12 +1,439 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="images/Javi.jpeg" type="image/x-icon">
     <title>Javier Meléndez - QA Automation Engineer</title>
+    <script src="js/script.js" defer></script>
+    <style>
+        .test {
+            border: 3px brown solid;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="text-3xl text-white bg-stone-800">Hello world!</h1>
+    <!-- Nav -->
+    <nav class="container py-4 mx-auto">
+        <!-- Flex container for nav items -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="javier-wrapper">
+                <div class="flex"><img src="images/Javi.jpeg" class="javier-image"/></div>
+                <h1 class="javier-name">Javier Meléndez</h1>
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden menu-items">
+                <a href="#home" class="hover:text-salmon">Home</a>
+                <a href="#projects" class="hover:text-salmon">Projects</a>
+                <a href="#skillset" class="hover:text-salmon">Skillset</a>
+                <a href="#certifications" class="hover:text-salmon">Certifications</a>
+                <a href="#contact" class="hover:text-salmon">Contact</a>
+                <a href="./resources/Javier Meléndez - QA Automation Engineer.pdf" class="resume-button">Resume</a>
+            </div>
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <div id="menu" class="hidden mobile-menu">
+            <div class="mobile-menu-item">
+                <a href="#home" class="block hover:text-salmon">Home</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#projects" class="block hover:text-salmon">Projects</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#skillset" class="block hover:text-salmon">Skillset</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#certifications" class="block hover:text-salmon">Certifications</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#contact" class="block hover:text-salmon">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="container mx-auto">
+        <!-- Flex container -->
+        <div class="about-wrapper">
+            <!-- Biography -->
+            <div class="bg-hero"></div>
+            <div class="about">
+                <h1 class="greeting">Hey! I'm Javier Meléndez Zacarías</h1>
+                <p class="description">A Telecommunications and IT Engineer ensuring the software quality as a Quality Assurance Automation Engineer</p>
+                <p class="sub-description">Let's connect!</p>
+                <!-- Social media -->
+                <div class="social-wrapper">
+                    <a href="https://www.linkedin.com/in/javier-meléndez-zacarías" class="social-media" target="_blank"><img src="images/icons/linkedin.png" class="social-icon"/></a>
+                    <a href="https://github.com/Krarid" class="social-media" target="_blank"><img src="images/icons/github-white.svg" class="social-icon"/></a>
+                    <a href="./resources/Javier Meléndez - QA Automation Engineer.pdf" class="social-media" target="_blank"><img src="images/icons/pdf.png" class="social-icon"/></a>
+                    <a href="mailto:javier.melendez.zacarias@outlook.com" class="social-media"><img src="images/icons/email.png" class="social-icon"/></a>
+                    <!-- <a target="_blank" href="https://icons8.com/icon/XgI8ghCZqXGi/letter">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="flex automation-wrapper">
+                <img src="images/automation.svg" class="automation-image">
+            </div>
+        </div>
+    </section>
+    <!-- <a href="https://www.freepik.com/free-vector/software-code-testing-concept-illustration_21532465.htm#query=testing&position=2&from_view=search&track=sph">
+        Image by storyset
+    </a> on Freepik -->
+    <!-- <a href="https://www.freepik.com/search?format=search&query=python&type=icon">Icon by Freepik</a> -->
+
+    <!-- Projects -->
+    <section id="projects" class="container mx-auto">
+        <!-- Projects container -->
+        <div class="flex flex-col my-12">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Projects</h1>
+            </div>
+            <!-- Projects flex -->
+            <div class="projects-wrapper">
+                <!-- Project 1 -->
+                <div class="project-wrapper">
+                    <div class="project-image-wrapper">
+                        <img src="images/projects/selenium-project.webp" class="project-image">
+                    </div>
+                    <h1 class="project-title">Selenium</h1>
+                    <p class="project-subtitle">
+                        Behaviour Driven Development
+                    </p>
+                    <div class="flex flex-wrap">
+                        <p class="project-tag">Java</p>
+                        <p class="project-tag">Selenium</p>
+                        <p class="project-tag">Page Object Model</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->  
+                <div class="project-wrapper">
+                    <div class="project-image-wrapper">
+                        <img src="images/projects/cypress.png" class="project-image">
+                    </div>
+                    <h1 class="project-title">Cypress</h1>
+                    <p class="project-subtitle">
+                        Test Driven Development
+                    </p>
+                    <div class="flex flex-wrap">
+                        <p class="project-tag">Cypress</p>
+                        <p class="project-tag">Javascript</p>
+                        <p class="project-tag">Page Object Model</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-wrapper">
+                    <div class="project-image-wrapper">
+                        <img src="images/projects/robot-framework.png" class="project-image">
+                    </div>
+                    <h1 class="project-title">Robot Framework</h1>
+                    <p class="project-subtitle">
+                        End to end testing
+                    </p>
+                    <div class="flex flex-wrap">
+                        <p class="project-tag">Robot Framework</p>
+                        <p class="project-tag">Python</p>
+                        <p class="project-tag">TDD</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-wrapper">
+                    <div class="project-image-wrapper">
+                        <img src="images/projects/jmeter.png" class="project-image">
+                    </div>
+                    <h1 class="project-title">JMeter</h1>
+                    <p class="project-subtitle">
+                        Performance Testing
+                    </p>
+                    <div class="flex flex-wrap">
+                        <p class="project-tag">JMeter</p>
+                        <p class="project-tag">Java</p>
+                        <p class="project-tag">Performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skillset -->
+    <section class="bg-grayish">
+        <div id="skillset" class="container mx-auto">
+            <!-- Skillset container -->
+            <div class="skillset-wrapper">
+                <!-- Title -->
+                <div class="title-wrapper">
+                    <h1 class="title-white">Skillset</h1>
+                </div>
+                <!-- Logos -->
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <img src="images/skillset/python.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/c.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/c++.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/c-sharp.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/java.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/selenium.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/cypress.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/github.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/jenkins.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/robot-framework.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/html.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/css.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/javascript.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/visual-studio.png" class="h-20"/>
+                    </div>
+                    <div class="logo">
+                        <img src="images/skillset/jmeter.svg" class="h-20"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="container mx-auto relative">
+        <div class="bg-cert-r"></div>
+        <div class="bg-cert-l"></div>
+        <!-- Certifications container -->
+        <div class="flex flex-col my-12">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Certifications</h1>
+            </div>
+            <!-- Certification flex -->
+            <div class="certifications-wrapper">
+                <!-- Certification 1 -->
+                <div class="certification-wrapper">
+                    <h1 class="certification-title hover:text-slate-500"><a href="https://verify.openedg.org/?id=nu7b.ME2a.sd72" target="_blank">CPA - C++ Certified Associate Programmer</a></h1>
+                    <div class="certification-image-wrapper">
+                        <img src="images/certificates/certificate_nu7b.ME2a.sd72.png" class="certification-image">
+                    </div>
+                    <a href="https://www.credly.com/badges/a0c1b95b-30a8-4811-9817-4a3b1a0c2ba4" class="badge-wrapper" target="_blank">
+                        <img src="images/badges/cpa.png" class="badge"/>
+                    </a>
+                    <p class="certification-provider">
+                        C++ Institute
+                    </p>
+                    <p class="certification-date">
+                        <span>Date: </span>
+                        ago.2023
+                    </p>
+                    <p class="certification-id">
+                        <span>ID: </span>
+                        nu7b.ME2a.sd72
+                    </p>
+                </div>
+                <!-- Certification 2 -->  
+                <div class="certification-wrapper">
+                    <h1 class="certification-title hover:text-slate-500"><a href="https://verify.openedg.org/?id=nu7b.ME2a.sd72" target="_blank">PCAP – Certified Associate in Python Programming</a></h1>
+                    <div class="certification-image-wrapper">
+                        <img src="images/certificates/certificate_3UVW.QKEr.FQL5.png" class="certification-image">
+                    </div>
+                    <a href="https://www.credly.com/badges/f5f1de86-7eec-449f-8c66-cd5d151551b2" class="badge-wrapper" target="_blank">
+                        <img src="images/badges/PACP.png" class="badge"/>
+                    </a>
+                    <p class="certification-provider">
+                        Python Institute
+                    </p>
+                    <p class="certification-date">
+                        <span>Date: </span>
+                        ago.2023
+                    </p>
+                    <p class="certification-id">
+                        <span>ID: </span>
+                        3UVW.QKEr.FQL5
+                    </p>
+                </div>
+                <!-- Certification 3 -->
+                <div class="certification-wrapper">
+                    <h1 class="certification-title hover:text-amber-900"><a href="https://atsqa.org/certified-testers/profile/e34c55017bce4f628c843703770d5c67" target="_blank">Certified Test, Foundation Level</a></h1>
+                    <div class="certification-image-wrapper">
+                        <img src="images/certificates/Certificate-b98b584ff8e041c1a45977d0f5464b6b.png" class="certification-image">
+                    </div>
+                    <a href="https://atsqa.org/certified-testers/profile/e34c55017bce4f628c843703770d5c67" class="badge-wrapper" target="_blank">
+                        <img src="images/badges/CTFL.png" class="badge"/>
+                    </a>
+                    <p class="certification-provider">
+                        ISTQB
+                    </p>
+                    <p class="certification-date">
+                        <span>Date: </span>
+                        2022-10-14
+                    </p>
+                    <p class="certification-id">
+                        <span>ID: </span>
+                        22-CTFL-02583-USA
+                    </p>
+                </div>
+                <!-- Certification 4 -->
+                <div class="certification-wrapper">
+                    <h1 class="certification-title hover:text-amber-900"><a href="https://atsqa.org/certified-testers/profile/e34c55017bce4f628c843703770d5c67" target="_blank">Certified Tester, Foundation Level Agile Tester</a></h1>
+                    <div class="certification-image-wrapper">
+                        <img src="images/certificates/Certificate-8b702b71e0354b7f8d96f24546db7652.png" class="certification-image">
+                    </div>
+                    <a href="https://atsqa.org/certified-testers/profile/e34c55017bce4f628c843703770d5c67" class="badge-wrapper" target="_blank">
+                        <img src="images/badges/CTFL-AT.png" class="badge"/>
+                    </a>
+                    <p class="certification-provider">
+                        ISTQB
+                    </p>
+                    <p class="certification-date">
+                        <span>Date: </span>
+                        2022-10-14
+                    </p>
+                    <p class="certification-id">
+                        <span>ID: </span>
+                        nu7b.ME2a.sd72
+                    </p>
+                </div>
+                <!-- Certification 5 -->
+                <div class="certification-wrapper">
+                    <h1 class="certification-title hover:text-amber-400"><a href="https://app.openbadges.me/view/#!/badge?badgeid=af470c3f-17e8-41a8-b310-ed8b8b223abe&includeSocials=true" target="_blank">Certified Professional Selenium Tester (CPST)</a></h1>
+                    <div class="certification-image-wrapper">
+                        <img src="images/certificates/certificate_G-102352.jpeg" class="certification-image">
+                    </div>
+                    <a href="https://app.openbadges.me/view/#!/badge?badgeid=af470c3f-17e8-41a8-b310-ed8b8b223abe&includeSocials=true" class="badge-wrapper" target="_blank">
+                        <img src="images/badges/cpst.png" class="badge"/>
+                    </a>
+                    <p class="certification-provider">
+                        GAQM
+                    </p>
+                    <p class="certification-date">
+                        <span>Date: </span>2022-12-19
+                    </p>
+                    <p class="certification-id">
+                        <span>ID: </span>G-102352
+                    </p>
+                </div>
+                <!-- Certification 6 -->
+                <div class="certification-wrapper">
+                    <h1 class="certification-title hover:text-amber-400"><a href="#">Certified SDET Professional</a></h1>
+                    <div class="certification-image-wrapper">
+                        <img src="images/certificates/certificate_0123023136.png" class="certification-image">
+                    </div>
+                    <a href="#" class="badge-wrapper">
+                        <img src="images/badges/SDET.png" class="badge"/>
+                    </a>
+                    <p class="certification-provider">
+                        Devlabs Alliance
+                    </p>
+                    <p class="certification-date">
+                        <span>Date: </span>2023-01-25
+                    </p>
+                    <p class="certification-id">
+                        <span>ID: </span>012023136
+                    </p>
+                </div>
+                <!-- Certification 7 -->
+                <div class="certification-wrapper">
+                    <h1 class="certification-title hover:text-amber-900"><a href="https://courses.edx.org/certificates/3faea9ae13ca4ddc93d53b564c5e534e" target="_blank">Cybersecurity fundamentals</a></h1>
+                    <div class="certification-image-wrapper">
+                        <img src="images/certificates/certificate_3faea9ae13ca4ddc93d53b564c5e534e.png" class="certification-image">
+                    </div>
+                    <a href="https://courses.edx.org/certificates/3faea9ae13ca4ddc93d53b564c5e534e" class="badge-wrapper" target="_blank">
+                        <img src="images/badges/edX.png" class="badge"/>
+                    </a>
+                    <p class="certification-provider">
+                        edX
+                    </p>
+                    <p class="certification-date">
+                        <span>Date: </span>
+                        2020-12-13
+                    </p>
+                    <p class="certification-id">
+                        <span>ID: </span>
+                        3faea9ae13ca4ddc93d53b564c5e534e
+                    </p>
+                </div>
+                <!-- Certification 8 -->
+                <div class="certification-wrapper">
+                    <h1 class="certification-title hover:text-slate-500"><a href="#">First Certificate in English</a></h1>
+                    <div class="certification-image-wrapper">
+                        <img src="images/certificates/cambridge.jpg" class="certification-image">
+                    </div>
+                    <a href="#" class="badge-wrapper">
+                        <img src="images/badges/Cambridge.png" class="badge"/>
+                    </a>
+                    <p class="certification-provider">
+                        Cambridge Assessment
+                    </p>
+                    <p class="certification-date">
+                        <span>Date: </span>
+                        2022-10-08
+                    </p>
+                    <p class="certification-id">
+                        <span>ID: </span>
+                        C0371461
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="full-certificate" class="hidden">
+        <img src="#" class="w-[75%]"/>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <!-- Footer container -->
+        <div class="footer-container">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-white">Contact</h1>
+            </div>
+            <!-- Message -->
+            <div class="flex">
+                <h1 class="text-white">Feel free to drop me a message!</h1>
+            </div>
+            <!-- Social media -->
+            <div class="social-wrapper">
+                <a href="https://www.linkedin.com/in/javier-meléndez-zacarías" class="social-media" target="_blank"><img src="images/icons/linkedin.png" class="social-icon"/></a>
+                <a href="https://github.com/Krarid" class="social-media" target="_blank"><img src="images/icons/github-white.svg" class="social-icon"/></a>
+                <a href="./resources/Javier Meléndez - QA Automation Engineer.pdf" class="social-media" target="_blank"><img src="images/icons/pdf.png" class="social-icon"/></a>
+                <a href="mailto:javier.melendez.zacarias@outlook.com" class="social-media"><img src="images/icons/email.png" class="social-icon"/></a>
+                <!-- <a target="_blank" href="https://icons8.com/icon/XgI8ghCZqXGi/letter">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2023. Made by <a href="./index.html" class="underline"> Javier Meléndez Zacarías</a></p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,263 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen(md) {
+    .bg-hero {
+        width: 2000px;
+        height: 350px;
+        right: 50%;
+        @apply absolute top-28 bg-grayish;
+    }
+
+    .bg-cert-r {
+        width: 2000px;
+        height: 300px;
+        left: 0%;
+        @apply absolute rounded-l-full top-96 bg-grayish;
+    }
+
+    .bg-cert-l {
+        width: 2000px;
+        height: 300px;
+        right: 0%;
+        @apply absolute rounded-r-full bottom-96 bg-grayish;
+    }
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    z-index: 30;
+    display: block;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    top: 0;
+    right: 25px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+    background: #000;
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+    position: fixed;
+    top: 50px;
+    right: 25px;
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+    background-color: #fff;
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    background-color: #fff;
+}
+
+.javier-wrapper {
+    @apply flex flex-row ml-2;
+}
+
+.javier-image {
+    @apply w-12 md:w-16 rounded-full border-4 border-grayish;
+}
+
+.javier-name {
+    @apply flex items-center justify-center capitalize text-sm lg:text-xl ml-8;
+}
+
+.menu-items {
+    @apply items-center md:flex md:flex-row uppercase md:text-xs lg:text-sm space-x-6 tracking-widest;
+}
+
+.resume-button {
+    @apply relative uppercase bg-salmon text-white py-2 px-4 rounded-sm active:bg-darkSalmon active:border-none active:top-1 border-b-4 border-darkSalmon
+}
+
+.mobile-menu {
+    @apply fixed inset-0 z-20 flex-col items-center self-end w-full h-full px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-black;
+}
+
+.mobile-menu-item {
+    @apply w-full py-3 text-center;
+}
+
+.about-wrapper {
+    @apply flex md:flex-row flex-col text-center mb-12;
+}
+
+.about {
+    @apply flex flex-col justify-center items-center md:w-1/2 p-10 text-white z-10 md:bg-transparent bg-grayish;
+}
+
+.greeting {
+    @apply text-2xl lg:text-4xl;
+}
+
+.description {
+    @apply mt-6 text-xs lg:text-base;
+}
+
+.sub-description {
+    @apply lg:text-base text-xs mt-6 mb-4;
+}
+
+.social-wrapper {
+    @apply flex flex-row;
+}
+
+.social-media {
+    @apply flex items-center justify-center m-4;
+}
+
+.social-icon {
+    @apply w-8 cursor-pointer;
+}
+
+.automation-wrapper {
+    @apply md:w-1/2 justify-center items-center;
+}
+
+.automation-image {
+    @apply md:h-96 h-48;
+}
+
+.skillset-wrapper {
+    @apply flex flex-col my-12;
+}
+
+.title-wrapper {
+    @apply flex mx-auto my-8;
+}
+
+.title-black {
+    @apply uppercase font-bold tracking-widest md:text-xl lg:text-2xl border-b-8 border-salmon;
+}
+
+.title-white {
+    @apply uppercase font-bold tracking-widest md:text-xl lg:text-2xl border-b-8 text-white border-salmon;
+}
+
+.projects-wrapper {
+    @apply flex flex-wrap text-left items-center justify-center;
+}
+
+.project-wrapper {
+    @apply flex flex-col lg:w-1/6 md:w-1/4 sm:w-1/3 lg:mx-4 mx-2 my-4 md:px-2 px-2 py-2 rounded-md shadow-sm shadow-slate-500;
+}
+
+.project-image-wrapper {
+    @apply flex items-center justify-center bg-slate-200;
+}
+
+.project-image {
+    @apply h-28 w-48;
+}
+
+.project-title {
+    @apply flex pt-3 lg:text-base text-sm font-semibold;
+}
+
+.project-subtitle {
+    @apply flex lg:text-sm text-xxs pt-2 pb-2 text-slate-400;
+}
+
+.project-tag {
+    @apply bg-grayish m-0.5 p-1 lg:text-xxs text-uxs text-white rounded-sm;
+}
+
+.logo-wrapper {
+    @apply flex flex-wrap px-12;
+}
+
+.logo {
+    @apply flex items-center justify-center lg:w-1/6 md:w-1/5 sm:w-1/3 w-1/2 my-8 hover:rotate-360 hover:scale-125 transition duration-1000;
+}
+
+.certifications-wrapper {
+    @apply flex flex-wrap text-center items-center justify-center z-10;
+}
+
+.certification-wrapper {
+    @apply flex flex-col xl:w-1/4 lg:w-1/3 md:w-1/2 px-10 py-6 m-8 border-8 border-black bg-white shadow-2xl shadow-grayish h-128;
+}
+
+.certification-title {
+    @apply flex items-center justify-center h-16 text-base font-semibold;
+}
+
+.certification-image-wrapper {
+    @apply flex items-center justify-center mb-4;
+}
+
+.certification-image {
+    @apply w-full cursor-pointer transition duration-500 hover:scale-125 hover:shadow-2xl hover:shadow-grayish;
+}
+
+.badge-wrapper {
+    @apply flex items-center justify-center m-4;
+}
+
+.badge {
+    @apply w-14 cursor-pointer transition duration-500 hover:scale-125;
+}
+
+.certification-provider {
+    @apply text-base font-bold mb-4;
+}
+
+.certification-date, .certification-id {
+    @apply text-left lg:text-xs text-uxs;
+}
+
+.certification-date > span, .certification-id > span {
+    @apply font-semibold text-grayish;
+}
+
+#full-certificate {
+    @apply justify-center items-center fixed inset-0 z-20 bg-black bg-opacity-80 cursor-pointer;
+}
+
+#contact {
+    @apply bg-grayish;
+}
+
+.footer-container {
+    @apply container flex flex-col mx-auto items-center text-center px-32 py-6;
+}
+
+.copyright {
+    @apply flex justify-center items-center  text-white text-xs mx-[10%] py-4 border-t border-white;
+}
