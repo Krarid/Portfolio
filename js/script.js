@@ -11,11 +11,18 @@ function navToggle() {
 } */
 
 $( function() {
-    // Click on hamburger icon and then open mobile header
-    $('#menu-btn').on('click', (e) => {
+
+    function hideMenu()
+    {
         $('#menu-btn').toggleClass('open')
-        $menu = $('#menu').toggleClass(['flex', 'hidden'])
-    })
+        $('#menu').toggleClass(['flex', 'hidden'])
+    }
+
+    // Click on hamburger icon and then open mobile header
+    $('#menu-btn').on('click', hideMenu)
+
+    // After clicking on any item header in mobile version the fixed layaout is removed
+    $('div.mobile-menu-item').on('click', hideMenu)
 
     // Click on any certificate and then zoom in
     $('.certification-image').on('click', (e) => {
