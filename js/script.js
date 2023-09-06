@@ -13,7 +13,7 @@ function navToggle() {
 $( function() {
     // Click on hamburger icon and then open mobile header
     $('#menu-btn').on('click', (e) => {
-        $(e.target).parent().toggleClass('open')
+        $('#menu-btn').toggleClass('open')
         $menu = $('#menu').toggleClass(['flex', 'hidden'])
     })
 

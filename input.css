@@ -56,7 +56,7 @@
     width: 24px;
     height: 3px;
     top: 0;
-    right: 25px;
+    right: 0px;
     background: #000;
     transform: rotate(0);
     transition: all 0.5s;
