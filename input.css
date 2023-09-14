@@ -231,7 +231,7 @@
 }
 
 .certification-image {
-    @apply w-full cursor-pointer transition duration-500 hover:scale-125 hover:shadow-2xl hover:shadow-grayish;
+    @apply w-full transition duration-500 hover:scale-125 hover:shadow-2xl hover:shadow-grayish cursor-zoom-in;
 }
 
 .badge-wrapper {
@@ -255,7 +255,7 @@
 }
 
 #full-certificate {
-    @apply justify-center items-center fixed inset-0 z-20 bg-black bg-opacity-80 cursor-pointer;
+    @apply justify-center items-center fixed inset-0 z-20 bg-black bg-opacity-80 cursor-zoom-out;
 }
 
 #contact {
