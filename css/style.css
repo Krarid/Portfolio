@@ -639,7 +639,7 @@ video {
     height: 350px;
     right: 50%;
     position: absolute;
-    top: 7rem;
+    top: 6rem;
     --tw-bg-opacity: 1;
     background-color: hsl(199 20% 18% / var(--tw-bg-opacity));
   }

@@ -7,7 +7,7 @@
         width: 2000px;
         height: 350px;
         right: 50%;
-        @apply absolute top-28 bg-grayish;
+        @apply absolute top-24 bg-grayish;
     }
 
     .bg-cert-1 {
