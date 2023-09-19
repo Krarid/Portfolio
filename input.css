@@ -187,11 +187,11 @@
 }
 
 .project-image-wrapper {
-    @apply flex items-center justify-center bg-slate-200;
+    @apply flex items-center justify-center;
 }
 
 .project-image {
-    @apply xl:h-40 lg:h-32 md:h-28 h-36 w-fit;
+    @apply xl:h-40 lg:h-32 md:h-28 h-36;
 }
 
 .project-title {
@@ -268,4 +268,45 @@
 
 .copyright {
     @apply flex justify-center items-center  text-white text-xs mx-[10%] py-4 border-t border-white;
+}
+
+.cucumber-tag {
+    @apply text-orange-600;
+}
+
+.cucumber {
+    @apply text-green-600;
+}
+
+.project-shadow {
+    -moz-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.project-gradient {
+    @apply bg-gradient-to-b from-white to-stone-50;
+}
+
+.project-section {
+    @apply container mx-auto p-4;
+}
+
+.project-flex {
+    @apply flex flex-col md:mx-20 mx-5 ;
+}
+
+.project-icon {
+    @apply w-12 mx-auto my-4;
+}
+
+.subtitle {
+    @apply capitalize font-bold tracking-widest md:text-base lg:text-xl border-b-8 border-blue-800;
+}
+
+.tool {
+    @apply bg-grayish m-4 p-3 text-lg text-white rounded-lg;
+}
+
+table, tr, td {
+    border: 2px solid black;
 }

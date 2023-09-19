@@ -43,4 +43,32 @@ $( function() {
         else
             $('#hero').addClass('container', 'mx-auto')
     })
+
+    // Click on see more... and expand the low level test cases
+    $('#see-more').on('mousedown', (e) => {
+        $('#low-level').removeClass('h-96', 'overflow-hidden');
+        $(e.target).parent().addClass('hidden');
+        $('#see-less').parent().removeClass('hidden');
+    })
+
+    // Click on see less... and contract the low level test cases
+    $('#see-less').on('mousedown', (e)=> {
+        $('#low-level').addClass('h-96', 'overflow-hidden');
+        $(e.target).parent().addClass('hidden');
+        $('#see-more').parent().removeClass('hidden');
+    })
+
+    // Click on see more... and expand the gerkhin
+    $('#see-more-gerkhin').on('mousedown', (e) => {
+        $('#gerkhin').removeClass('h-128', 'overflow-hidden');
+        $(e.target).parent().addClass('hidden');
+        $('#see-less-gerkhin').parent().removeClass('hidden');
+    })
+
+    // Click on see less... and contract the gerkhin
+    $('#see-less-gerkhin').on('mousedown', (e)=> {
+        $('#gerkhin').addClass('h-128', 'overflow-hidden');
+        $(e.target).parent().addClass('hidden');
+        $('#see-more-gerkhin').parent().removeClass('hidden');
+    })
 });
