@@ -11,11 +11,18 @@ function navToggle() {
 } */
 
 $( function() {
+
+    function hideMenu()
+    {
+        $('#menu-btn').toggleClass('open')
+        $('#menu').toggleClass(['flex', 'hidden'])
+    }
+
     // Click on hamburger icon and then open mobile header
-    $('#menu-btn').on('click', (e) => {
-        $(e.target).parent().toggleClass('open')
-        $menu = $('#menu').toggleClass(['flex', 'hidden'])
-    })
+    $('#menu-btn').on('click', hideMenu)
+
+    // After clicking on any item header in mobile version the fixed layaout is removed
+    $('div.mobile-menu-item').on('click', hideMenu)
 
     // Click on any certificate and then zoom in
     $('.certification-image').on('click', (e) => {
@@ -35,5 +42,33 @@ $( function() {
             $('#hero').removeClass('container', 'mx-auto')
         else
             $('#hero').addClass('container', 'mx-auto')
+    })
+
+    // Click on see more... and expand the low level test cases
+    $('#see-more').on('mousedown', (e) => {
+        $('#low-level').removeClass('h-96', 'overflow-hidden');
+        $(e.target).parent().addClass('hidden');
+        $('#see-less').parent().removeClass('hidden');
+    })
+
+    // Click on see less... and contract the low level test cases
+    $('#see-less').on('mousedown', (e)=> {
+        $('#low-level').addClass('h-96', 'overflow-hidden');
+        $(e.target).parent().addClass('hidden');
+        $('#see-more').parent().removeClass('hidden');
+    })
+
+    // Click on see more... and expand the gerkhin
+    $('#see-more-gerkhin').on('mousedown', (e) => {
+        $('#gerkhin').removeClass('h-128', 'overflow-hidden');
+        $(e.target).parent().addClass('hidden');
+        $('#see-less-gerkhin').parent().removeClass('hidden');
+    })
+
+    // Click on see less... and contract the gerkhin
+    $('#see-less-gerkhin').on('mousedown', (e)=> {
+        $('#gerkhin').addClass('h-128', 'overflow-hidden');
+        $(e.target).parent().addClass('hidden');
+        $('#see-more-gerkhin').parent().removeClass('hidden');
     })
 });
