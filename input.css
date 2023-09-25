@@ -183,7 +183,7 @@
 }
 
 .project-wrapper {
-    @apply flex flex-col xl:w-1/4 lg:w-[35%] md:w-[40%] sm:w-[80%] sm:h-64 md:h-56 lg:h-60 xl:h-64 lg:mx-3 mx-2 my-3 md:px-2 px-2 py-2 rounded-md shadow-sm shadow-slate-500 cursor-pointer hover:shadow-xl hover:shadow-slate-700;
+    @apply flex flex-col xl:w-1/4 lg:w-[35%] md:w-[40%] w-[80%] sm:h-64 md:h-56 lg:h-60 xl:h-64 lg:mx-3 mx-2 my-3 md:px-2 px-2 py-2 rounded-md shadow-sm shadow-slate-500 cursor-pointer hover:shadow-xl hover:shadow-slate-700;
 }
 
 .project-image-wrapper {
