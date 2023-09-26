@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="images/Javi.jpeg" type="image/x-icon">
+    <title>Javier Meléndez - QA Automation Engineer</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="container pt-4 mx-auto border border-b-2 border-white">
+        <!-- Flex container for nav items -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="javier-wrapper">
+                <a class="flex" href="index.html"><img src="images/Javi.jpeg" class="javier-image"/></a>
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden menu-items">
+                <a href="#home" class="hover:text-salmon">Home</a>
+                <a href="#projects" class="hover:text-salmon">Projects</a>
+                <a href="#skillset" class="hover:text-salmon">Skillset</a>
+                <a href="#certifications" class="hover:text-salmon">Certifications</a>
+                <a href="#contact" class="hover:text-salmon">Contact</a>
+                <a href="resources/Javier Meléndez - QA Automation Engineer.pdf" class="resume-button">Resume</a>
+            </div>
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <div id="menu" class="hidden mobile-menu">
+            <div class="mobile-menu-item">
+                <a href="#home" class="block hover:text-salmon">Home</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#projects" class="block hover:text-salmon">Projects</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#skillset" class="block hover:text-salmon">Skillset</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#certifications" class="block hover:text-salmon">Certifications</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#contact" class="block hover:text-salmon">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overview section -->
+    <section class="project-gradient">
+      <div class="project-section">
+        <!-- Flex container -->
+        <div class="flex md:flex-row flex-col-reverse text-center">
+            <!-- Project description -->
+            <div class="flex flex-col justify-center items-center md:w-1/2 p-10 text-black z-10 md:bg-transparent">
+                <img src="images/projects/orangehrm_logo.png"></img>
+                <div class="w-full text-black border border-solid border-black my-4"></div>
+                <p class="text-base text-gray-500 lg:text-base">OrangeHRM provides a HRIS experience and offers HR Administration.</p>
+                <a href="https://github.com/Krarid/cypress-TDD" class="flex flex-row bg-stone-900 text-white mt-4 py-2 px-4 rounded-lg active:bg-black active:border-none hover:shadow-md hover:shadow-stone-500" target="_blank">
+                  <img src="images/icons/github_logo_white.png" class="flex w-20 mr-2 items-center justify-center"/>
+                  <img src="images/icons/github-mark-white.png" class="flex w-8 items-center justify-center"/>
+                </a>
+            </div>
+            <!-- Image -->
+            <div class="flex md:w-1/2 justify-center items-center">
+                <img src="images/projects/orangehrm.png" class="md:h-96 h-48">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Strategy -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Strategy container -->
+        <div class="project-flex">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <h1 class="title-black">Test Strategy</h1>
+          </div>
+          <div class="project-icon">
+            <img src="images/icons/strategy.png"/>
+          </div>
+          <!-- Description -->
+          <p class="pb-4 text-left">
+            This project aims to demonstrate my skills in Automation with Cypress using JavaScript as programming language Test Driven Development.
+            Therefore, it is for demonstration purposes. The OrangeHRM website belongs to <span class="font-semibold">Orange HRM </span> which is a open source HRMS.
+          </p>
+          <p class="py-4 text-left">
+            It should be noted that not all the website functionalities were automated, the approach followed was to write test cases at a high level that offered the main functionalities of the application, in their case: login, add/edit/delete users, employees and vacancies and create/like posts.             
+          </p>
+          <p class="py-4 text-left">
+            The test cases were translated into low level to detail step by step the execution of the test cases.  These test cases are grouped by test scenarios, ID, positive/negative, the type of test case (functional) and whether it is automatable or not.
+            Only functional test cases have been considered, therefore performance, usability and any non-functional test cases are out of scope.
+          </p>
+          <p class="py-4 text-left">
+            The execution of the test cases and the results are shown in later sections.
+            Finally, Jenkins is integrated for continuous integration and continuous deployment.
+          </p>
+          <ul class="flex flex-wrap list-disc">
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Author</span>: Javier Meléndez Zacarías</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Website author</span>: Orange HRM</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Date</span>: 9/25/2023</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">URL</span>: https://opensource-demo.orangehrmlive.com/</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">JIRA</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Epic</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">User Story</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Test cases</span>: 15</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Automation</span>: Cypress</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Language</span>: JavaScript</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Framework</span>: Test Driven Development</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Passing score</span>: 100%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Test Cases -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Cases container -->
+        <div class="project-flex">
+            <!-- Test cases -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test cases</h1>
+            </div>
+            <!-- Icon -->
+            <div class="w-12 mx-auto mt-4">
+              <img src="images/icons/test.png"/>
+            </div>
+            <!-- High level -->
+            <div class="flex mb-4">
+                <h1 class="subtitle">High level</h1>
+            </div>
+            <div class="overflow-x-auto grid">
+              <table class="table-auto text-center">
+                <thead>
+                  <tr class="bg-blue-400">
+                    <th>ID</th>
+                    <th>Test scenario</th>
+                    <th>Test case</th>
+                    <th>Positive / Negative</th>
+                    <th>Type</th>
+                    <th>Automatable</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HRM-1</td>
+                    <td rowspan="2" class="bg-yellow-200">Login</td>
+                    <td>Login with correct credentials</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-2</td>
+                    <td>Login with incorrect credentials</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-3</td>
+                    <td rowspan="4" class="bg-green-200">Search</td>
+                    <td>Add a user to the system</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-4</td>
+                    <td>Add a user to the system with existing username</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-5</td>
+                    <td>Add a job</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-6</td>
+                    <td>Delete a job</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-7</td>
+                    <td rowspan="3" class="bg-gray-300">PIM</td>
+                    <td>Add an employee</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-8</td>
+                    <td>Edit an employee</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-9</td>
+                    <td>Delete an employee</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-10</td>
+                    <td rowspan="2" class="bg-orange-300">Recruitment</td>
+                    <td>Add a vacancy</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-11</td>
+                    <td>Delete a vacancy</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-12</td>
+                    <td rowspan="2" class="bg-pink-300">Maintenance</td>
+                    <td>Access to maintenance mode</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-13</td>
+                    <td>Access to maintenance mode with incorrect credentials</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-14</td>
+                    <td rowspan="2" class="bg-blue-300">Buzz</td>
+                    <td>Create a post</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>HRM-15</td>
+                    <td>Like a post</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Low level -->
+            <div class="flex my-4">
+                <h1 class="subtitle">Low level</h1>
+            </div>
+            <div id="low-level" class="h-96 overflow-y-hidden overscroll-x-auto grid">
+              <table class="table-auto text-center">
+                <thead>
+                  <tr class="bg-blue-800 text-white">
+                    <th>ID</th>
+                    <th>Test case</th>
+                    <th>Test Data</th>
+                    <th>Precondition</th>
+                    <th>Steps</th>
+                    <th>Expected Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-blue-300">
+                    <td>HRM-1</td>
+                    <td>Login with correct credentials</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>1.1</td>
+                    <td></td>
+                    <td>Admin</td>
+                    <td></td>
+                    <td>Enter {Test Data} as the username</td>
+                    <td>Username field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>1.2</td>
+                    <td></td>
+                    <td>admin123</td>
+                    <td></td>
+                    <td>Enter {Test Data} as the password</td>
+                    <td>Password field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>1.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on Login</td>
+                    <td>User gets logged in</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-2</td>
+                    <td>Login with incorrect credentials</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>2.1</td>
+                    <td></td>
+                    <td>Test</td>
+                    <td></td>
+                    <td>Enter {Test Data} as the username</td>
+                    <td>Username field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>2.2</td>
+                    <td></td>
+                    <td>test123</td>
+                    <td></td>
+                    <td>Enter {Test Data} as the password</td>
+                    <td>Password field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>2.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on Login</td>
+                    <td>An error message gets displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-3</td>
+                    <td>Add a user to the system</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>3.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "Admin" from left sidepanel</td>
+                    <td>Admin page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>3.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "+ Add" button</td>
+                    <td>Add User page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>3.3</td>
+                    <td></td>
+                    <td>1. Admin <br>2. Ess</td>
+                    <td></td>
+                    <td>Select {Test Data} as User Role</td>
+                    <td>User role gets selected</td>
+                  </tr>
+                  <tr>
+                    <td>3.4</td>
+                    <td></td>
+                    <td>1. Enabled <br>2. Disabled</td>
+                    <td></td>
+                    <td>Select {Test Data} as Status</td>
+                    <td>Status gets selected</td>
+                  </tr>
+                  <tr>
+                    <td>3.5</td>
+                    <td></td>
+                    <td>1. Linda Jane Anderson<br>Odis Adalwin</td>
+                    <td></td>
+                    <td>Type {Test Data} as Employee Name</td>
+                    <td>Employee name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>3.6</td>
+                    <td></td>
+                    <td>Test123</td>
+                    <td></td>
+                    <td>Type {Test Data} as Username</td>
+                    <td>Username field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>3.7</td>
+                    <td></td>
+                    <td>Test123@QA$</td>
+                    <td></td>
+                    <td>Type {Test Data} as Password</td>
+                    <td>Password field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>3.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Save" button</td>
+                    <td>A success message gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>3.9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Search the recently added user</td>
+                    <td>The recently added user was added in the system</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-4</td>
+                    <td>Add a user to the system with existing username</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>4.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "Admin" from left sidepanel</td>
+                    <td>Admin page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>4.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "+ Add" button</td>
+                    <td>Add User page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>4.3</td>
+                    <td></td>
+                    <td>1. Admin <br>2. Ess</td>
+                    <td></td>
+                    <td>Select {Test Data} as User Role</td>
+                    <td>User role gets selected</td>
+                  </tr>
+                  <tr>
+                    <td>4.4</td>
+                    <td></td>
+                    <td>1. Enabled <br>2. Disabled</td>
+                    <td></td>
+                    <td>Select {Test Data} as Status</td>
+                    <td>Status gets selected</td>
+                  </tr>
+                  <tr>
+                    <td>4.5</td>
+                    <td></td>
+                    <td>1. Linda Jane Anderson<br>Odis Adalwin</td>
+                    <td></td>
+                    <td>Type {Test Data} as Employee Name</td>
+                    <td>Employee name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>4.6</td>
+                    <td></td>
+                    <td>Test123</td>
+                    <td></td>
+                    <td>Type {Test Data} as Username</td>
+                    <td>Username field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>4.7</td>
+                    <td></td>
+                    <td>Test123@QA$</td>
+                    <td></td>
+                    <td>Type {Test Data} as Password</td>
+                    <td>Password field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>4.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Save" button</td>
+                    <td>An error message below the Username field gets displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-5</td>
+                    <td>Add a job</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>5.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "Admin" from left sidepanel</td>
+                    <td>Admin page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>5.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Job" in top bar menu</td>
+                    <td>A context menu gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>5.3</td>
+                    <td></td>
+                    <td>1. Admin <br>2. Ess</td>
+                    <td></td>
+                    <td>Click on "Job Title" in the context menu</td>
+                    <td>Job Titles page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>5.4</td>
+                    <td></td>
+                    <td>1. Enabled <br>2. Disabled</td>
+                    <td></td>
+                    <td>Click on "+ Add" button</td>
+                    <td>Add Job Title page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>5.5</td>
+                    <td></td>
+                    <td>QA Automation Engineer</td>
+                    <td></td>
+                    <td>Enter {Test Data} as Job Title</td>
+                    <td>Job Title field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>5.6</td>
+                    <td></td>
+                    <td>Description</td>
+                    <td></td>
+                    <td>Enter {Test Data} as Job Description</td>
+                    <td>Job Description field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>5.7</td>
+                    <td></td>
+                    <td>Test123@QA$</td>
+                    <td></td>
+                    <td>Click on Save button</td>
+                    <td>A success message gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>5.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Search the recently added job title</td>
+                    <td>The recently added job title was added in the system</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-6</td>
+                    <td>Delete a job</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>6.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "Admin" from left sidepanel</td>
+                    <td>Admin page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>6.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Job" in top bar menu</td>
+                    <td>A context menu gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>6.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Job Title" in the context menu</td>
+                    <td>Job Titles page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>6.4</td>
+                    <td></td>
+                    <td>QA Automation Engineer</td>
+                    <td></td>
+                    <td>Search {Test Data} job title and click on trash button</td>
+                    <td>A pop up is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>6.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Yes, Delete" button</td>
+                    <td>A success message gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>6.6</td>
+                    <td></td>
+                    <td>QA Automation Engineer</td>
+                    <td></td>
+                    <td>Search {Test Data} job title and validate it should not appear</td>
+                    <td>The deleted job title doesn't appear</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-7</td>
+                    <td>Add an employe</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>7.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "PIM" from left sidepanel</td>
+                    <td>PIM page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>7.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Add Employee" in top bar menu</td>
+                    <td>Add Employee page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>7.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Enter {Test Data} as First Name</td>
+                    <td>First Name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>7.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Enter {Test Data} as Last Name</td>
+                    <td>Last Name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>7.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Save" button</td>
+                    <td>A success message gets displayed and user is redirected to the employee page</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-8</td>
+                    <td>Edit an employee</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>8.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "PIM" from left sidepanel</td>
+                    <td>PIM page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>8.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Employee List" in top bar menu</td>
+                    <td>Employee List page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>8.3</td>
+                    <td></td>
+                    <td>Automation Engineer</td>
+                    <td></td>
+                    <td>Type {Test Data} in the Employee Name field</td>
+                    <td>Employee name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>8.4</td>
+                    <td></td>
+                    <td>Green<br />Blue</td>
+                    <td></td>
+                    <td>Click on "Search" button</td>
+                    <td>The Employee gets listed</td>
+                  </tr>
+                  <tr>
+                    <td>8.5</td>
+                    <td></td>
+                    <td>1<br />20</td>
+                    <td></td>
+                    <td>Click on pencil icon in the employee row</td>
+                    <td>User is redirected to the employee page</td>
+                  </tr>
+                  <tr>
+                    <td>8.6</td>
+                    <td></td>
+                    <td>Python</td>
+                    <td></td>
+                    <td>Change the employee first name to {Test Data}</td>
+                    <td>First Name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>8.7</td>
+                    <td></td>
+                    <td>Developer</td>
+                    <td></td>
+                    <td>Change the employee last name to {Test Data}</td>
+                    <td>Last Name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>8.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Save" button</td>
+                    <td>A success message gets displayed and user is redirected to the employee page</td>
+                  </tr>
+                  <tr>
+                    <td>8.9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Employee List" in top bar menu</td>
+                    <td>Employee List page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>8.10</td>
+                    <td></td>
+                    <td>Python Developer</td>
+                    <td></td>
+                    <td>Type {Test Data} in the Employee Name field</td>
+                    <td>Employee name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>8.11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Search" button</td>
+                    <td>The Employee gets listed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-9</td>
+                    <td>Delete an employee</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>9.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "PIM" from left sidepanel</td>
+                    <td>PIM page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>9.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Employee List" in top bar menu</td>
+                    <td>Employee List page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>9.3</td>
+                    <td></td>
+                    <td>Python Developer</td>
+                    <td></td>
+                    <td>Type {Test Data} in the Employee Name field</td>
+                    <td>Employee name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>9.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Search" button</td>
+                    <td>The Employee gets listed</td>
+                  </tr>
+                  <tr>
+                    <td>9.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on trash icon in the employee row</td>
+                    <td>A pop up is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>9.6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Yes, Delete" button</td>
+                    <td>A success message gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>9.7</td>
+                    <td></td>
+                    <td>Python Developer</td>
+                    <td></td>
+                    <td>Search {Test Data} in the employee name and validate it should not appear</td>
+                    <td>The employee name doesn't appear</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-10</td>
+                    <td>Add a vacancy</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>10.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Recruitment" from left sidepanel</td>
+                    <td>Recruitment page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>10.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Vacancies" in top bar menu</td>
+                    <td>Vacancies page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>10.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "+ Add" button</td>
+                    <td>Add Vacancy page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>10.4</td>
+                    <td></td>
+                    <td>Automation Engineer</td>
+                    <td></td>
+                    <td>Enter {Test Data} as Vacancy Name</td>
+                    <td>Vacancy Name field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>10.5</td>
+                    <td></td>
+                    <td>QA Engineer</td>
+                    <td></td>
+                    <td>Select {Test Data} as Job Title</td>
+                    <td>Job Title gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>10.6</td>
+                    <td></td>
+                    <td>Linda Jane Anderson</td>
+                    <td></td>
+                    <td>Type {Test Data} as Hiring Manager</td>
+                    <td>Hiring Manager field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>10.7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Save" button</td>
+                    <td>A success message gets displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-11</td>
+                    <td>Delete a vacancy</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>11.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "Recruitment" from left sidepanel</td>
+                    <td>Recruitment page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>11.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Vacancies" in top bar menu</td>
+                    <td>Vacancies page gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>11.3</td>
+                    <td></td>
+                    <td>QA Engineer</td>
+                    <td></td>
+                    <td>Select {Test Data} as Job Title</td>
+                    <td>Job Title field gets selected</td>
+                  </tr>
+                  <tr>
+                    <td>11.4</td>
+                    <td></td>
+                    <td>Automation Engineer</td>
+                    <td></td>
+                    <td>Select {Test Data} as Vacancy</td>
+                    <td>Vacancy field gets selected</td>
+                  </tr>
+                  <tr>
+                    <td>11.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Search" button</td>
+                    <td>The vacancy gets listed</td>
+                  </tr>
+                  <tr>
+                    <td>11.6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on trash icon in the vacancy row</td>
+                    <td>A pop up is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>11.7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Yes, Delete" button</td>
+                    <td>A success message gets displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-12</td>
+                    <td>Access to maintenance mode</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>12.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "Maintenance" from left sidepanel</td>
+                    <td>Maintenance login page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>12.2</td>
+                    <td></td>
+                    <td>admin123</td>
+                    <td></td>
+                    <td>Enter {Test Data} as the password</td>
+                    <td>Password field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>12.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Confirm" button</td>
+                    <td>User is redirected to maintenance mode page</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-13</td>
+                    <td>Access to maintenance mode with incorrect credentials</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>13.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Maintenance" from left sidepanel</td>
+                    <td>Maintenance login page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>13.2</td>
+                    <td></td>
+                    <td>test123</td>
+                    <td></td>
+                    <td>Enter {Test Data} as the password</td>
+                    <td>Password field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>13.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Confirm" button</td>
+                    <td>An error message gets displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-14</td>
+                    <td>Create a post</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>14.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "Buzz" from left sidepanel</td>
+                    <td>Buzz login page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>14.2</td>
+                    <td></td>
+                    <td>Hello World!</td>
+                    <td></td>
+                    <td>Type {Test Data} in the post field</td>
+                    <td>Post field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>14.3</td>
+                    <td></td>
+                    <td>Password123</td>
+                    <td></td>
+                    <td>Click on "Post" button</td>
+                    <td>A success message gets displayed</td>
+                  </tr>
+                  <tr>
+                    <td>14.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Validate the newest post has been added</td>
+                    <td>The newest post has been added</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>HRM-15</td>
+                    <td>Like a post</td>
+                    <td></td>
+                    <td>User should have accessed to OrangeHRM website</td>
+                    <td>Visit https://opensource-demo.orangehrmlive.com/</td>
+                    <td>User is redirected to OrangeHRM website</td>
+                  </tr>
+                  <tr>
+                    <td>15.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>User should have logged in with correct credentials</td>
+                    <td>Click on "Buzz" from left sidepanel</td>
+                    <td>Buzz login page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>15.2</td>
+                    <td></td>
+                    <td>Hello World!</td>
+                    <td></td>
+                    <td>Search the newest post and click on heart icon</td>
+                    <td>The number of likes gets incremented</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="text-center mt-3 hover:shadow-sm hover:shadow-white">
+              <button id="see-more" class="relative text-stone-500 hover:text-blue-800 w-full">See more &#8595;</button>
+            </div>
+            <div class="text-center mt-3 hidden">
+              <button id="see-less" class="relative text-stone-500 hover:text-blue-800 w-full">See less &#8593;</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Execution -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Execution container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test Execution</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/play.png"/>
+            </div>
+            <!-- Description -->
+            <div class="flex pb-4 text-justify">
+              The project was executed using Visual Studio Code as JavaScript development environment and Electron as test execution browser.
+            </div>
+            <!-- Image -->
+            <div>
+              <video src="videos/orangehrm-execution.mp4" preload="metadata" controls>
+              </video>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Results -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Results container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test Results</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/result.png"/>
+            </div>
+            <!-- Description -->
+            <div class="flex pb-10 text-justify">
+              The pass rate for the 15 test cases was 100%. Run time was 3 minutes and 21 seconds. 
+              It was run on a Mac OS X computer.
+            </div>
+            <!-- Image -->
+            <figure>
+              <img src="images/projects/orangehrm_results.png" />
+              <figcaption class="text-gray-400 text-sm">Test results</figcaption>
+            </figure>
+            <div class="text-center mt-3 hover:shadow-sm hover:shadow-white">
+              <a href="https://cloud.cypress.io/projects/jhj3wq/runs/1/overview?roarHideRunsWithDiffGroupsAndTags=1" class="relative text-stone-500 hover:text-salmon w-full" target="_blank">See test results &#10697;</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools used -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Defects container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Tools</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/toolbox.png"/>
+            </div>
+            <!-- Tools -->
+            <div class="flex flex-wrap justify-center items-center">
+              <p class="tool">JavaScript</p>
+              <p class="tool">Cypress</p>
+              <p class="tool">Mocha</p>
+              <p class="tool">Chai</p>
+              <p class="tool">Cypress Cloud</p>
+              <p class="tool">Test Driven Development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer id="contact">
+        <!-- Footer container -->
+        <div class="footer-container">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-white">Contact</h1>
+            </div>
+            <!-- Message -->
+            <div class="flex mt-8">
+                <h1 class="text-white">Feel free to drop me a message!</h1>
+            </div>
+            <!-- Social media -->
+            <div class="social-wrapper">
+                <a href="https://www.linkedin.com/in/javier-meléndez-zacarías" class="social-media" target="_blank"><img src="images/icons/linkedin.png" class="social-icon"/></a>
+                <a href="https://github.com/Krarid" class="social-media" target="_blank"><img src="images/icons/github-white.svg" class="social-icon"/></a>
+                <a href="../resources/Javier Meléndez - QA Automation Engineer.pdf" class="social-media" target="_blank"><img src="images/icons/pdf.png" class="social-icon"/></a>
+                <a href="mailto:javier.melendez.zacarias@outlook.com" class="social-media"><img src="images/icons/email.png" class="social-icon"/></a>
+                <!-- <a target="_blank" href="https://icons8.com/icon/XgI8ghCZqXGi/letter">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2023. Made by <a href="index.html" class="underline"> Javier Meléndez Zacarías</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</body>
+</html>

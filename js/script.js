@@ -66,9 +66,29 @@ $( function() {
     })
 
     // Click on see less... and contract the gerkhin
-    $('#see-less-gerkhin').on('mousedown', (e)=> {
+    $('#see-less-gerkhin').on('mousedown', (e) => {
         $('#gerkhin').addClass('h-128', 'overflow-hidden');
         $(e.target).parent().addClass('hidden');
         $('#see-more-gerkhin').parent().removeClass('hidden');
+    })
+
+    // Hover over the projects and display the framework used
+    $('#project1').on('mouseenter', (e) => {
+        $('#project1 img').removeAttr('src').attr('src', 'images/skillset/selenium.png');
+    })
+
+    // Hover over the projects and display the framework used
+    $('#project1').on('mouseleave', (e) => {
+        $('#project1 img').removeAttr('src').attr('src', 'images/projects/LUMA.png');
+    })
+
+    // Hover over the projects and display the framework used
+    $('#project2').on('mouseenter', (e) => {
+        $('#project2 img').removeAttr('src').attr('src', 'images/skillset/cypress.png');
+    })
+
+    // Hover over the projects and display the framework used
+    $('#project2').on('mouseleave', (e) => {
+        $('#project2 img').removeAttr('src').attr('src', 'images/projects/orangehrm.png');
     })
 });
