@@ -91,4 +91,14 @@ $( function() {
     $('#project2').on('mouseleave', (e) => {
         $('#project2 img').removeAttr('src').attr('src', 'images/projects/orangehrm.png');
     })
+
+     // Hover over the projects and display the framework used
+     $('#project3').on('mouseenter', (e) => {
+        $('#project3 img').removeAttr('src').attr('src', 'images/skillset/appium.png');
+    })
+
+    // Hover over the projects and display the framework used
+    $('#project3').on('mouseleave', (e) => {
+        $('#project3 img').removeAttr('src').attr('src', 'images/projects/MyDemoApp.png');
+    })
 });
