@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="images/Javi.jpeg" type="image/x-icon">
+    <title>Javier Meléndez - QA Automation Engineer</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="container pt-4 mx-auto border border-b-2 border-white">
+        <!-- Flex container for nav items -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="javier-wrapper">
+                <a class="flex" href="index.html"><img src="images/Javi.jpeg" class="javier-image"/></a>
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden menu-items">
+                <a href="#home" class="hover:text-salmon">Home</a>
+                <a href="#projects" class="hover:text-salmon">Projects</a>
+                <a href="#skillset" class="hover:text-salmon">Skillset</a>
+                <a href="#certifications" class="hover:text-salmon">Certifications</a>
+                <a href="#contact" class="hover:text-salmon">Contact</a>
+                <a href="resources/Javier Meléndez - QA Automation Engineer.pdf" class="resume-button">Resume</a>
+            </div>
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <div id="menu" class="hidden mobile-menu">
+            <div class="mobile-menu-item">
+                <a href="#home" class="block hover:text-salmon">Home</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#projects" class="block hover:text-salmon">Projects</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#skillset" class="block hover:text-salmon">Skillset</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#certifications" class="block hover:text-salmon">Certifications</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a href="#contact" class="block hover:text-salmon">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overview section -->
+    <section class="project-gradient">
+      <div class="project-section">
+        <!-- Flex container -->
+        <div class="flex md:flex-row flex-col-reverse text-center">
+            <!-- Project description -->
+            <div class="flex flex-col justify-center items-center md:w-1/2 p-10 text-black z-10 md:bg-transparent">
+                <img src="images/projects/sauce-labs-logo.png" ></img>
+                <div class="w-full text-black border border-solid border-black my-4"></div>
+                <p class="text-base text-gray-500 lg:text-base">My Demo App is a... demo app! It was built by the Sauce Labs team to showcase product capabilities of the Sauce Labs mobile devices cloud, The Sauce Labs mobile beta testing platform, TestFairy, and more products and technologies.</p>
+                <a href="https://github.com/Krarid/mydemoapp-android-appium-java" class="flex flex-row bg-stone-900 text-white mt-4 py-2 px-4 rounded-lg active:bg-black active:border-none hover:shadow-md hover:shadow-stone-500" target="_blank">
+                  <img src="images/icons/github_logo_white.png" class="flex w-20 mr-2 items-center justify-center"/>
+                  <img src="images/icons/github-mark-white.png" class="flex w-8 items-center justify-center"/>
+                </a>
+            </div>
+            <!-- Image -->
+            <div class="flex md:w-1/2 justify-center items-center">
+                <img src="images/projects/MyDemoApp-mobile.png" class="h-128">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Strategy -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Strategy container -->
+        <div class="project-flex">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <h1 class="title-black">Test Strategy</h1>
+          </div>
+          <div class="project-icon">
+            <img src="images/icons/strategy.png"/>
+          </div>
+          <!-- Description -->
+          <p class="pb-4 text-left">
+            This project aims to demonstrate my skills in Automation with Appium using Java as programming language.
+            Therefore, it is for demonstration purposes. The MyDemoApp belongs to the author of <span class="font-semibold">Sauce Labs</span> which is an American cloud-hosted, web and mobile application automated testing platform company.
+          </p>
+          <p class="py-4 text-left">
+            It should be noted that not all the app functionalities were automated, the approach followed was to write test cases at a high level that offered the main functionalities of the application, in their case: add products to cart, buy products, login and drawing.             
+          </p>
+          <p class="py-4 text-left">
+            The test cases were translated into low level to detail step by step the execution of the test cases.  These test cases are grouped by test scenarios, ID, positive/negative, the type of test case (functional) and whether it is automatable or not.
+            Only functional test cases have been considered, therefore performance, usability and any non-functional test cases are out of scope.
+          </p>
+          <p class="py-4 text-left">
+            The programming language, automation framework, and document object model have been chosen for maintainability purposes and will be described below.
+            The execution of the test cases and the results are shown in later sections.
+            Finally, Jenkins is integrated for continuous integration and continuous deployment.
+          </p>
+          <ul class="flex flex-wrap list-disc">
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Author</span>: Javier Meléndez Zacarías</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Website author</span>: Sauce Labs</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Date</span>: 1/28/2024</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">URL</span>: <a href="https://github.com/saucelabs/my-demo-app-rn"> My Demo App</a></li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">JIRA</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Epic</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">User Story</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Test cases</span>: 25</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Defects</span>: 1</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Automation</span>: Appium</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Language</span>: Java</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Framework</span>: Test Driven Development</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Framework language</span>: Espresso</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Automation model</span>: Page Object Model</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Passing score</span>: 96%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Test Cases -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Cases container -->
+        <div class="project-flex">
+            <!-- Test cases -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test cases</h1>
+            </div>
+            <!-- Icon -->
+            <div class="w-12 mx-auto mt-4">
+              <img src="images/icons/test.png"/>
+            </div>
+            <!-- High level -->
+            <div class="flex mb-4">
+                <h1 class="subtitle">High level</h1>
+            </div>
+            <div class="overflow-x-auto grid">
+              <table class="table-auto text-center">
+                <thead>
+                  <tr class="bg-blue-400">
+                    <th>ID</th>
+                    <th>Test scenario</th>
+                    <th>Test case</th>
+                    <th>Positive / Negative</th>
+                    <th>Type</th>
+                    <th>Automatable</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>LUMA-1</td>
+                    <td rowspan="2" class="bg-yellow-200">What's New</td>
+                    <td>Sections from New in Women's can be opened</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-2</td>
+                    <td>Sections from New in Men's can be opened</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-3</td>
+                    <td rowspan="5" class="bg-green-200">Search</td>
+                    <td>Women tops can be searched</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-4</td>
+                    <td>Women bottoms can be searched</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-5</td>
+                    <td>Men tops can be searched</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-6</td>
+                    <td>Men bottoms can be searched</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-7</td>
+                    <td>No items are displayed when searching non-existing items</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-8</td>
+                    <td rowspan="4" class="bg-pink-200">Purchase</td>
+                    <td>Women accessories can be purchased</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-9</td>
+                    <td>Men accessories can be purchased</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-10</td>
+                    <td>Gear accessories can be purchased</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-11</td>
+                    <td>Validate message when there are no items in the shopping</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-12</td>
+                    <td rowspan="3" class="bg-blue-200">Account</td>
+                    <td>User can sign in</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-13</td>
+                    <td>User can create an account</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>LUMA-14</td>
+                    <td>User cannot sign in with incorrect credentials</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Low level -->
+            <div class="flex my-4">
+                <h1 class="subtitle">Low level</h1>
+            </div>
+            <div id="low-level" class="h-96 overflow-y-hidden overscroll-x-auto grid">
+              <table class="table-auto text-center">
+                <thead>
+                  <tr class="bg-blue-800 text-white">
+                    <th>ID</th>
+                    <th>Test case</th>
+                    <th>Test Data</th>
+                    <th>Precondition</th>
+                    <th>Steps</th>
+                    <th>Expected Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-1</td>
+                    <td>Sections from New in Women's can be opened</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>1.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "What's New" from header</td>
+                    <td>User is redirected to What's New section</td>
+                  </tr>
+                  <tr>
+                    <td>1.2</td>
+                    <td></td>
+                    <td>1. Hoodies & Swatshirts<br />2. Jackets</td>
+                    <td></td>
+                    <td>Click on {Test Data} in New in Women's section</td>
+                    <td>Desired page gets opened</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-2</td>
+                    <td>Sections from New in Men's can be opened</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>2.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "What's New" from header</td>
+                    <td>User is redirected to What's New section</td>
+                  </tr>
+                  <tr>
+                    <td>2.2</td>
+                    <td></td>
+                    <td>1. Hoodies & Swatshirts<br />2. Jackets</td>
+                    <td></td>
+                    <td>Click on {Test Data} in New in Men's section</td>
+                    <td>Desired page gets opened</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-3</td>
+                    <td>Women tops can be searched</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>3.1</td>
+                    <td></td>
+                    <td>Search: 1. Jade Yoga Jacket<br />2. Diva Gym Tee</td>
+                    <td></td>
+                    <td>Type {Test Data} in search field at the top right-hand corner</td>
+                    <td>A text hint is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>3.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on the displayed text hint</td>
+                    <td>The user is redirected to a new page loaded with items related to the search</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-4</td>
+                    <td>Women bottoms can be searched</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>4.1</td>
+                    <td></td>
+                    <td>1. Portia Capri<br />2. Artemis Running Short</td>
+                    <td></td>
+                    <td>Type {Test Data} in search field at the top right-hand corner</td>
+                    <td>A text hint is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>4.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on the displayed text hint</td>
+                    <td>The user is redirected to a new page loaded with items related to the search</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-5</td>
+                    <td>Men tops can be searched</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>5.1</td>
+                    <td></td>
+                    <td>Typhon Performance<br />2. Logan HeatTec</td>
+                    <td></td>
+                    <td>Type {Test Data} in search field at the top right-hand corner</td>
+                    <td>A text hint is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>5.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on the displayed text hint</td>
+                    <td>The user is redirected to a new page loaded with items related to the search</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-6</td>
+                    <td>Men bottoms can be searched</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>6.1</td>
+                    <td></td>
+                    <td>Search: 1. Livinston 2. Kratos</td>
+                    <td></td>
+                    <td>Type {Test Data} in search field at the top right-hand corner</td>
+                    <td>A text hint is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>6.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on the displayed text hint</td>
+                    <td>The user is redirected to a new page loaded with items related to the search</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-7</td>
+                    <td>No items are displayed when searching non-existing items</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>7.1</td>
+                    <td></td>
+                    <td>Search: 1. QWERTY 2. !@#$%^&</td>
+                    <td></td>
+                    <td>Type {Test Data} in search field at the top right-hand corner</td>
+                    <td>A text hint is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>7.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on the displayed text hint</td>
+                    <td>The user is redirected to a new page loaded with items related to the search</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-8</td>
+                    <td>Women accessories can be purchased</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>8.1</td>
+                    <td></td>
+                    <td>1. Women > Tops > Jackets<br />2. Women > Bottoms > Pants </td>
+                    <td></td>
+                    <td>Go to {Test Data}</td>
+                    <td>User is redirected to the desired page</td>
+                  </tr>
+                  <tr>
+                    <td>8.2</td>
+                    <td></td>
+                    <td>1. Jade Yoga Jacket<br />2. Portia Capri</td>
+                    <td></td>
+                    <td>Click on {Test Data}</td>
+                    <td>User is redirected to the item page</td>
+                  </tr>
+                  <tr>
+                    <td>8.3</td>
+                    <td></td>
+                    <td>M<br />29</td>
+                    <td></td>
+                    <td>Select {Test Data} size</td>
+                    <td>The desired size is selected</td>
+                  </tr>
+                  <tr>
+                    <td>8.4</td>
+                    <td></td>
+                    <td>Green<br />Blue</td>
+                    <td></td>
+                    <td>Select {Test Data} color</td>
+                    <td>The desired size is selected</td>
+                  </tr>
+                  <tr>
+                    <td>8.5</td>
+                    <td></td>
+                    <td>1<br />20</td>
+                    <td></td>
+                    <td>Type {Test Data} as quantity</td>
+                    <td>The desired quantity is selected</td>
+                  </tr>
+                  <tr>
+                    <td>8.6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon and verity the subtotal</td>
+                    <td>The subtotal is the multiplication of the quantity of items and the price of it</td>
+                  </tr>
+                  <tr>
+                    <td>8.7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on proceed to checkout</td>
+                    <td>User is redirected to the shipping page</td>
+                  </tr>
+                  <tr>
+                    <td>8.8</td>
+                    <td></td>
+                    <td>Email address: test@test.com<br />First Name: Test<br />Last Name: Test<br />Street Address: Test<br />City: Test<br />State: Berlin<br />ZIP: 12345<br />Country: Germany<br />Phone Number: 12345678</td>
+                    <td></td>
+                    <td>Fill mandatory details in the form</td>
+                    <td>Form details are filled</td>
+                  </tr>
+                  <tr>
+                    <td>8.9</td>
+                    <td></td>
+                    <td>Table Rate<br />Fixed</td>
+                    <td></td>
+                    <td>Select Table Rate as the shipping method and click on Next</td>
+                    <td>User is redirected to the review & payments page</td>
+                  </tr>
+                  <tr>
+                    <td>8.10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Check "My billing and shipping address are the same" and click on Place Order button</td>
+                    <td>"Thank you for you purchased!" message is displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-9</td>
+                    <td>Men accessories can be purchased</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>9.1</td>
+                    <td></td>
+                    <td>1. Men > Tops > Jackets<br />2. Men > Bottoms > Pants </td>
+                    <td></td>
+                    <td>Go to {Test Data}</td>
+                    <td>User is redirected to the desired page</td>
+                  </tr>
+                  <tr>
+                    <td>9.2</td>
+                    <td></td>
+                    <td>1. Typhon Performance<br />2. Livingston</td>
+                    <td></td>
+                    <td>Click on {Test Data}</td>
+                    <td>User is redirected to the item page</td>
+                  </tr>
+                  <tr>
+                    <td>9.3</td>
+                    <td></td>
+                    <td>M<br /></td>
+                    <td></td>
+                    <td>Select {Test Data} size</td>
+                    <td>The desired size is selected</td>
+                  </tr>
+                  <tr>
+                    <td>9.4</td>
+                    <td></td>
+                    <td>Red<br />Livingston</td>
+                    <td></td>
+                    <td>Select {Test Data} color</td>
+                    <td>The desired size is selected</td>
+                  </tr>
+                  <tr>
+                    <td>9.5</td>
+                    <td></td>
+                    <td>1<br />20</td>
+                    <td></td>
+                    <td>Type {Test Data} as quantity</td>
+                    <td>The desired quantity is selected</td>
+                  </tr>
+                  <tr>
+                    <td>9.6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon and verity the subtotal</td>
+                    <td>The subtotal is the multiplication of the quantity of items and the price of it</td>
+                  </tr>
+                  <tr>
+                    <td>9.7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on proceed to checkout</td>
+                    <td>User is redirected to the shipping page</td>
+                  </tr>
+                  <tr>
+                    <td>9.8</td>
+                    <td></td>
+                    <td>Email address: test@test.com<br />First Name: Test<br />Last Name: Test<br />Street Address: Test<br />City: Test<br />State: Berlin<br />ZIP: 12345<br />Country: Germany<br />Phone Number: 12345678</td>
+                    <td></td>
+                    <td>Fill mandatory details in the form</td>
+                    <td>Form details are filled</td>
+                  </tr>
+                  <tr>
+                    <td>9.9</td>
+                    <td></td>
+                    <td>Table Rate<br />Fixed</td>
+                    <td></td>
+                    <td>Select Table Rate as the shipping method and click on Next</td>
+                    <td>User is redirected to the review & payments page</td>
+                  </tr>
+                  <tr>
+                    <td>9.10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Check "My billing and shipping address are the same" and click on Place Order button</td>
+                    <td>"Thank you for you purchased!" message is displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-10</td>
+                    <td>Gear accessories can be purchased</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>10.1</td>
+                    <td></td>
+                    <td>1. Gear > Bags</td>
+                    <td></td>
+                    <td>Go to {Test Data}</td>
+                    <td>User is redirected to the desired page</td>
+                  </tr>
+                  <tr>
+                    <td>10.2</td>
+                    <td></td>
+                    <td>Fusion Backpack</td>
+                    <td></td>
+                    <td>Click on {Test Data}</td>
+                    <td>User is redirected to the item page</td>
+                  </tr>
+                  <tr>
+                    <td>10.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Select {Test Data} size</td>
+                    <td>The desired size is selected</td>
+                  </tr>
+                  <tr>
+                    <td>10.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Select {Test Data} color</td>
+                    <td>The desired size is selected</td>
+                  </tr>
+                  <tr>
+                    <td>10.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Type {Test Data} as quantity</td>
+                    <td>The desired quantity is selected</td>
+                  </tr>
+                  <tr>
+                    <td>10.6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon and verity the subtotal</td>
+                    <td>The subtotal is the multiplication of the quantity of items and the price of it</td>
+                  </tr>
+                  <tr>
+                    <td>10.7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on proceed to checkout</td>
+                    <td>User is redirected to the shipping page</td>
+                  </tr>
+                  <tr>
+                    <td>10.8</td>
+                    <td></td>
+                    <td>Email address: test@test.com<br />First Name: Test<br />Last Name: Test<br />Street Address: Test<br />City: Test<br />State: Berlin<br />ZIP: 12345<br />Country: Germany<br />Phone Number: 12345678</td>
+                    <td></td>
+                    <td>Fill mandatory details in the form</td>
+                    <td>Form details are filled</td>
+                  </tr>
+                  <tr>
+                    <td>10.9</td>
+                    <td></td>
+                    <td>Table Rated</td>
+                    <td></td>
+                    <td>Select Table Rate as the shipping method and click on Next</td>
+                    <td>User is redirected to the review & payments page</td>
+                  </tr>
+                  <tr>
+                    <td>10.10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Check "My billing and shipping address are the same" and click on Place Order button</td>
+                    <td>"Thank you for you purchased!" message is displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-11</td>
+                    <td>Validate message when there are no items in the shopping cart</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>11.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon</td>
+                    <td>A pop up is displayed</td>
+                  </tr>
+                  <tr>
+                    <td>11.2</td>
+                    <td></td>
+                    <td></td>
+                    <td>No items should not have been added to the cart before</td>
+                    <td>Validate the message "You have no items in your shopping cart." is present</td>
+                    <td>The message regarding no items in the cart is displayed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-12</td>
+                    <td>User can sign in</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>12.1</td>
+                    <td></td>
+                    <td>vohola2224@sesxe.com</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>Email gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>12.2</td>
+                    <td></td>
+                    <td>Test123@QA$</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>Password gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>12.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Sign in" button</td>
+                    <td>User gets logged in</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-13</td>
+                    <td>User can create an account</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>13.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on Sign in link at the top right-hand corner</td>
+                    <td>User is redirected to the customer login</td>
+                  </tr>
+                  <tr>
+                    <td>13.2</td>
+                    <td></td>
+                    <td>Test</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>First Name gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>13.3</td>
+                    <td></td>
+                    <td>Test</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>Last Name gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>13.4</td>
+                    <td></td>
+                    <td>@sesxe.com</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>Email gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>13.6</td>
+                    <td></td>
+                    <td>Test123@QA$</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>Password gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>13.7</td>
+                    <td></td>
+                    <td>Test123@QA$</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>Confirm password gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>13.8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Create an account" button</td>
+                    <td>Account gets created</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>LUMA-14</td>
+                    <td>User cannot sign in with incorrect credentials</td>
+                    <td></td>
+                    <td>User should have accessed to Luma website</td>
+                    <td>Visit https://magento.softwaretestingboard.com/</td>
+                    <td>User is redirected to Luma Website</td>
+                  </tr>
+                  <tr>
+                    <td>14.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on Sign in button at the top right-hand corner</td>
+                    <td>User is redirected to the customer login</td>
+                  </tr>
+                  <tr>
+                    <td>14.2</td>
+                    <td></td>
+                    <td>Test@test.com</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>Email gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>14.3</td>
+                    <td></td>
+                    <td>Password123</td>
+                    <td></td>
+                    <td>Type {Test Data}</td>
+                    <td>Password gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>14.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Sign in" button</td>
+                    <td>An error message gets displayed</td>
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="text-center mt-3 hover:shadow-sm hover:shadow-white">
+              <button id="see-more" class="relative text-stone-500 hover:text-blue-800 w-full">See more &#8595;</button>
+            </div>
+            <div class="text-center mt-3 hidden">
+              <button id="see-less" class="relative text-stone-500 hover:text-blue-800 w-full">See less &#8593;</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Object Model -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Page Object Model container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Page Object Model</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/diagram.png"/>
+            </div>
+            <!-- Description -->
+            <p class="flex pb-10 text-justify">
+              Page Object Model, also known as POM, is a design pattern in Selenium that creates an object repository for storing all web elements. It helps reduce code duplication and improves test case maintenance.
+              In Page Object Model, consider each web page of an application as a class file. Each class file will contain only corresponding web page elements. Using these elements, testers can perform operations on the website under test.
+            </p>
+            <!-- Image -->
+            <figure>
+              <img src="images/projects/Page_Object_Model.png" />
+              <figcaption class="text-gray-400 text-sm">Page Object Model</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+    
+    <section class="project-shadow project-gradient">
+      <!-- Behavior Driven Development -->
+     <div class="project-section">
+      <!-- Behavior Driven Development container -->
+      <div class="project-flex">
+          <!-- Title -->
+          <div class="title-wrapper">
+              <h1 class="title-black">Behavior Driven Development</h1>
+          </div>
+          <!-- Icon -->
+          <div class="project-icon">
+            <img src="images/icons/cucumber.png"/>
+          </div>
+          <!-- Description -->
+          <p class="flex py-2 text-justify">
+            BDD is a way for software teams to work that closes the gap between business people and technical people by:
+          </p>
+          <ul class="list-disc ml-12">
+            <li>Encouraging collaboration across roles to build shared understanding of the problem to be solved</li>
+            <li>Working in rapid, small iterations to increase feedback and the flow of value</li>
+            <li>Producing system documentation that is automatically checked against the system's behaviour</li>
+          </ul>
+          <p class="flex pt-4 text-justify">
+            We do this by focusing collaborative work around concrete, real-world examples that illustrate how we want the system to behave. We use those examples to guide us from concept through to implementation, in a process of continuous collaboration.
+          </p>
+          <!-- Gerkhin -->
+          <pre id="gerkhin" class="flex h-128 overflow-hidden"><code>
+<span class="cucumber-tag">@LUMA</span>
+<span class="cucumber">Feature:</span> Luma
+
+  <span class="cucumber">Background:</span>
+    <span class="cucumber">Given</span> I visit Luma page
+
+  <span class="cucumber-tag">@LUMA-1</span>
+  <span class="cucumber">Scenario Outline:</span> Sections from New in Womens can be opened
+    <span class="cucumber">Given</span> I click on What is New
+    <span class="cucumber">When</span> I click on "section" women section
+    <span class="cucumber">Then</span> I validate I am in the "section" page
+    
+    <span class="cucumber">Examples:</span>
+    | section               |
+    | Hoodies & Sweatshirts |
+    | Bras & Tanks          |
+    
+  <span class="cucumber-tag">@LUMA-2</span>
+  <span class="cucumber">Scenario Outline:</span> Sections from New in Mens can be opened
+    <span class="cucumber">Given</span> I click on What is New
+    <span class="cucumber">When</span> I click on "section" men section
+    <span class="cucumber">Then</span> I validate I am in the "section" page
+    
+    <span class="cucumber">Examples:</span>
+    | section               |
+    | Hoodies & Sweatshirts |
+    | Tanks                 |
+    
+  <span class="cucumber-tag">@LUMA-3</span>
+  <span class="cucumber">Scenario Outline:</span> Women tops can be searched
+    <span class="cucumber">Given</span> I search "item" item
+    <span class="cucumber">When</span> I click on search autocomplete 
+    <span class="cucumber">Then</span> I validate the "item" is displayed in the page
+    
+    <span class="cucumber">Examples:</span>
+    | item                |
+    | Jade Yoga Jacket    |
+    | Diva Gym Tee        |
+    
+  <span class="cucumber-tag">@LUMA-4</span>
+  <span class="cucumber">Scenario Outline:</span> Women bottoms can be searched
+    <span class="cucumber">Given</span> I search "item" item
+    <span class="cucumber">When</span> I click on search autocomplete 
+    <span class="cucumber">Then</span> I validate the "item" is displayed in the page
+    
+    <span class="cucumber">Examples:</span>
+    | item                  |
+    | Portia Capri          |
+    | Artemis Running Short |
+    
+  <span class="cucumber-tag">@LUMA-5</span>
+  <span class="cucumber">Scenario Outline:</span> Men tops can be searched
+    <span class="cucumber">Given</span> I search "item" item
+    <span class="cucumber">When</span> I click on search autocomplete 
+    <span class="cucumber">Then</span> I validate the "item" is displayed in the page
+    
+    <span class="cucumber">Examples:</span>
+    | item                  |
+    | Typhon Performance    |
+    | Logan HeatTec         |
+    
+  <span class="cucumber-tag">@LUMA-6</span>
+  <span class="cucumber">Scenario Outline:</span> Men bottoms can be searched
+    <span class="cucumber">Given</span> I search "item" item
+    <span class="cucumber">When</span> I click on search autocomplete 
+    <span class="cucumber">Then</span> I validate the "item" is displayed in the page
+    
+    <span class="cucumber">Examples:</span>
+    | item      |
+    | Livingston|
+    | Kratos    |
+    
+  <span class="cucumber-tag">@LUMA-7</span>
+  <span class="cucumber">Scenario Outline:</span> No items are displayed when searching non-existing items
+    <span class="cucumber">Given</span> I search "item" item
+    <span class="cucumber">When</span> I hit Enter button
+    <span class="cucumber">Then</span> I validate the "Your search returned no results." message gets displayed
+    
+  <span class="cucumber">Examples:</span>
+  | item      |
+  | QWERTY    |
+    
+  <span class="cucumber-tag">@LUMA-8</span>
+  <span class="cucumber">Scenario Outline:</span> Women accessories can be purchased
+    <span class="cucumber">Given</span> I go to "header" > "section" > "item"
+    <span class="cucumber">When</span> I click on "product" product
+    <span class="cucumber">And</span> I buy "units" units of "size" size and "color" color
+    <span class="cucumber">And</span> I fill the shipping details with following data
+    | Email         | First name  | Last name | Street  | City    | State   | ZIP     | Country   | Phone number  | Shipping method |
+    | hola@test.com	| Test        | Test      | Test    | Test    | Berlin  | 12345   | Germany   | 12345678      | Fixed           |
+    <span class="cucumber">Then</span> I validate the order was successful
+    
+  <span class="cucumber">Examples:</span>
+  | header  | section | item    | product           | units | size  | color |
+  | Women   | Tops    | Jackets | Jade Yoga Jacket  | 1     | M     | green |
+  | Women   | Bottoms | Pants   | Portia Capri      | 20    | 29    | blue  |
+
+  <span class="cucumber-tag">@LUMA-9</span>
+  <span class="cucumber">Scenario Outline:</span> Men accessories can be purchased
+    <span class="cucumber">Given</span> I go to "header" > "section" > "item"
+    <span class="cucumber">When</span> I click on "product" product
+    <span class="cucumber">And</span> I buy "units" units of "size" size and "color" color
+    <span class="cucumber">And</span> I fill the shipping details with following data
+    | Email         | First name  | Last name | Street  | City    | State   | ZIP     | Country   | Phone number  | Shipping method |
+    | hola@test.com	| Test        | Test      | Test    | Test    | Berlin  | 12345   | Germany   | 12345678      | Fixed           |
+    <span class="cucumber">Then</span> I validate the order was successful
+    
+  <span class="cucumber">Examples:</span>
+  | header  | section | item    | product             | units | size  | color |
+  | Men     | Tops    | Jackets | Typhon Performance  | 1     | M     | red   |
+  
+  <span class="cucumber-tag">@LUMA-10</span>
+  <span class="cucumber">Scenario Outline:</span> Gear accessories can be purchased
+    <span class="cucumber">Given</span> I go to "header" > "section"
+    <span class="cucumber">When</span> I click on "product" product
+    <span class="cucumber">And</span> I buy "units" units
+    <span class="cucumber">And</span> I fill the shipping details with following data
+    | Email         | First name  | Last name | Street  | City    | State   | ZIP     | Country   | Phone number  | Shipping method |
+    | hola@test.com	| Test        | Test      | Test    | Test    | Berlin  | 12345   | Germany   | 12345678      | Fixed           |
+    <span class="cucumber">Then</span> I validate the order was successful
+    
+  <span class="cucumber">Examples:</span>
+  | header  | section | product             | units |
+  | Gear    | Bags    | Fusion Backpack     | 1     |
+  
+  <span class="cucumber-tag">@LUMA-11</span>
+  <span class="cucumber">Scenario:</span> Validate message when there are no items in the shopping cart
+  <span class="cucumber">When</span> I click on cart
+  <span class="cucumber">Then</span> I validate there are no items in the shipping cart
+  
+  <span class="cucumber-tag">@LUMA-12</span>
+  <span class="cucumber">Scenario Outline:</span> User can sign in
+  <span class="cucumber">Given</span> I go to login page
+  <span class="cucumber">When</span> I enter "username" and "password" as my credentials
+  <span class="cucumber">Then</span> I validate I was logged in
+  
+  <span class="cucumber">Examples:</span>
+  | username              | password    |
+  | vohola2224@sesxe.com  | Test123@QA$ |
+  
+  <span class="cucumber-tag">@LUMA-13</span>
+  <span class="cucumber">Scenario:</span> User can create an account
+  <span class="cucumber">Given</span> I go to create an account
+  <span class="cucumber">When</span> I fill the account details
+  | First Name  | Last Name | Email      | Password    | Confirm password |
+  | Test        | Test      | @sesxe.com | Test123@QA$ | Test123@QA$      |
+  <span class="cucumber">Then</span> I validate my account was created
+  
+  <span class="cucumber-tag">@LUMA-14</span>
+  <span class="cucumber">Scenario Outline:</span> User cannot sign in with incorrect credentials
+  <span class="cucumber">Given</span> I go to login page
+  <span class="cucumber">When</span> I enter "username" and "password" as my credentials
+  <span class="cucumber">Then</span> I validate an error message is displayed
+  
+    <span class="cucumber">Examples:</span>
+  | username                    | password    |
+  | nonexistingaccount@test.com | Test123@QA$ |
+            </pre></code>
+            <div class="text-center mt-3">
+              <button id="see-more-gerkhin" class="relative text-stone-500 hover:text-green-600 w-full">See more &#8595;</button>
+            </div>
+            <div class="text-center mt-3 hidden">
+              <button id="see-less-gerkhin" class="relative text-stone-500 hover:text-green-600 w-full">See less &#8593;</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Execution -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Execution container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test Execution</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/play.png"/>
+            </div>
+            <!-- Description -->
+            <div class="flex pb-4 text-justify">
+              The project was executed using Eclipse IDE as Java development environment and Google Chrome as test execution browser.
+            </div>
+            <!-- Image -->
+            <div>
+              <video src="videos/Test_execution.mp4" preload="metadata" controls>
+              </video>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Results -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Results container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test Results</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/result.png"/>
+            </div>
+            <!-- Description -->
+            <div class="flex pb-10 text-justify">
+              The pass rate for the 14 test cases was 95%, with 5% being a failed test case. Run time was 14 minutes and 1 second. 
+              It was run on a Mac OS X computer, Java language HotSpot(TM) 64-Bit Server VM 18.0.2.1+1-1 and Cucumber-jvm version 7.13.0.
+            </div>
+            <!-- <iframe src="report.html" class="h-96 overflow-auto"></iframe> -->
+            <!-- Image -->
+            <figure>
+              <img src="images/projects/test_results.png" />
+              <figcaption class="text-gray-400 text-sm">Test results</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Defects -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Defects container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Defects</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/bug.png"/>
+            </div>
+            <!-- Description -->
+            <div class="flex pb-8 text-justify">
+              The following bug was found in the project: It is not possible to add Fusion Backpack items to the shopping cart. 
+            </div>
+            <ul class="list-disc ml-12">
+              <li class="py-1"><span class="font-semibold">Summary</span>: Adding Fusion Backpack items to the shopping cart is not possible even though they are in stock</li>
+              <li class="py-1"><span class="font-semibold">Description</span>: It is not possible to add a Fusion Backpack item to the shopping cart, the message on the item specifies that it is in stock. But when adding it, the following error message appears: "The requested qty is not available".</li>
+              <li class="py-1"><span class="font-semibold">Steps</span>: 
+                <ul class="list-decimal ml-12">
+                  <li>Go to Gear > Bags</li>
+                  <li>Click on Fusion Backpack item</li>
+                  <li>Fill the qty field with at least 1 item</li>
+                  <li>Click on "Add to Cart button"</li>
+                </ul>
+              </li>
+              <li class="py-1"><span class="font-semibold">Actual result</span>: After trying adding a fusion backpack item to the shopping cart the cart doesn't get updated</li>
+              <li class="py-1"><span class="font-semibold">Expected result</span>: After adding a fusion backpack item to the shopping cart the cart should get updated</li>
+              <li class="py-1"><span class="font-semibold">Environment</span>: Google Chrome v116.0.5845.187</li>
+              <li class="py-1"><span class="font-semibold">Attachments</span>:</li>
+            </ul>
+            <!-- Image -->
+            <figure>
+              <video src="videos/LUMA_bug.mp4" preload="metadata" controls>
+              </video>
+              <figcaption class="text-gray-400 text-sm">LUMA bug</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools used -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Defects container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Tools</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/toolbox.png"/>
+            </div>
+            <!-- Tools -->
+            <div class="flex flex-wrap justify-center items-center">
+              <p class="tool">Java</p>
+              <p class="tool">Selenium</p>
+              <p class="tool">Eclipse</p>
+              <p class="tool">Page Object Model</p>
+              <p class="tool">Cucumber</p>
+              <p class="tool">Gerkhin</p>
+              <p class="tool">Behavior Driven Development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer id="contact">
+        <!-- Footer container -->
+        <div class="footer-container">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-white">Contact</h1>
+            </div>
+            <!-- Message -->
+            <div class="flex mt-8">
+                <h1 class="text-white">Feel free to drop me a message!</h1>
+            </div>
+            <!-- Social media -->
+            <div class="social-wrapper">
+                <a href="https://www.linkedin.com/in/javier-meléndez-zacarías" class="social-media" target="_blank"><img src="images/icons/linkedin.png" class="social-icon"/></a>
+                <a href="https://github.com/Krarid" class="social-media" target="_blank"><img src="images/icons/github-white.svg" class="social-icon"/></a>
+                <a href="../resources/Javier Meléndez - QA Automation Engineer.pdf" class="social-media" target="_blank"><img src="images/icons/pdf.png" class="social-icon"/></a>
+                <a href="mailto:javier.melendez.zacarias@outlook.com" class="social-media"><img src="images/icons/email.png" class="social-icon"/></a>
+                <!-- <a target="_blank" href="https://icons8.com/icon/XgI8ghCZqXGi/letter">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+            </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 <a href="./index.html"> Javier Meléndez Zacarías</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</body>
+</html>
