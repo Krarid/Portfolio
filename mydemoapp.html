@@ -1462,7 +1462,7 @@
             </p>
             <!-- Image -->
             <figure>
-              <img src="images/projects/Page_Object_Model.png" />
+              <img src="images/projects/MyDemoApp_POM.png" />
               <figcaption class="text-gray-400 text-sm">Page Object Model</figcaption>
             </figure>
         </div>
@@ -1484,11 +1484,11 @@
             </div>
             <!-- Description -->
             <div class="flex pb-4 text-justify">
-              The project was executed using Eclipse IDE as Java development environment and Google Chrome as test execution browser.
+              The project was executed using Eclipse IDE as Java development environment and Android Studio as Android device emulator.
             </div>
             <!-- Image -->
             <div>
-              <video src="videos/Test_execution.mp4" preload="metadata" controls>
+              <video src="videos/MyDemoApp.mp4" preload="metadata" controls>
               </video>
             </div>
         </div>
@@ -1510,15 +1510,17 @@
             </div>
             <!-- Description -->
             <div class="flex pb-10 text-justify">
-              The pass rate for the 14 test cases was 95%, with 5% being a failed test case. Run time was 14 minutes and 1 second. 
-              It was run on a Mac OS X computer, Java language HotSpot(TM) 64-Bit Server VM 18.0.2.1+1-1 and Cucumber-jvm version 7.13.0.
+              The pass rate for the 25 test cases was 96%, with 4% being a failed test case. Run time was 5 minutes and 57 seconds. 
             </div>
             <!-- <iframe src="report.html" class="h-96 overflow-auto"></iframe> -->
             <!-- Image -->
             <figure>
-              <img src="images/projects/test_results.png" />
+              <img src="images/projects/MyDemoApp_results.png" />
               <figcaption class="text-gray-400 text-sm">Test results</figcaption>
             </figure>
+            <div class="text-center mt-3 hover:shadow-sm hover:shadow-white">
+              <a href="./resources/index.html" class="relative text-stone-500 hover:text-salmon w-full" target="_blank">See test results &#10697;</a>
+            </div>
         </div>
       </div>
     </section>
@@ -1537,30 +1539,27 @@
               <img src="images/icons/bug.png"/>
             </div>
             <!-- Description -->
-            <div class="flex pb-8 text-justify">
-              The following bug was found in the project: It is not possible to add Fusion Backpack items to the shopping cart. 
-            </div>
             <ul class="list-disc ml-12">
-              <li class="py-1"><span class="font-semibold">Summary</span>: Adding Fusion Backpack items to the shopping cart is not possible even though they are in stock</li>
-              <li class="py-1"><span class="font-semibold">Description</span>: It is not possible to add a Fusion Backpack item to the shopping cart, the message on the item specifies that it is in stock. But when adding it, the following error message appears: "The requested qty is not available".</li>
+              <li class="py-1"><span class="font-semibold">Summary</span>: The sum of an item added to the cart several times is incorrect.</li>
+              <li class="py-1"><span class="font-semibold">Description</span>: Increasing the number of items to purchase for an item and adding it to the cart several times causes the total sum to be incorrect.</li>
               <li class="py-1"><span class="font-semibold">Steps</span>: 
                 <ul class="list-decimal ml-12">
-                  <li>Go to Gear > Bags</li>
-                  <li>Click on Fusion Backpack item</li>
-                  <li>Fill the qty field with at least 1 item</li>
-                  <li>Click on "Add to Cart button"</li>
+                  <li>Launch MyDemoApp</li>
+                  <li>Click on "Sauce Labs Backpack"</li>
+                  <li>Increase the count to 3</li>
+                  <li>Click on "Add to Cart button" 4 times</li>
+                  <li>Click on cart icon at the upper right</li>
+                  <li>Verify that the total sum is $359.88 as the individual item price is $29.99 multiplied by the total number of items which is 12.</li>
                 </ul>
               </li>
-              <li class="py-1"><span class="font-semibold">Actual result</span>: After trying adding a fusion backpack item to the shopping cart the cart doesn't get updated</li>
-              <li class="py-1"><span class="font-semibold">Expected result</span>: After adding a fusion backpack item to the shopping cart the cart should get updated</li>
-              <li class="py-1"><span class="font-semibold">Environment</span>: Google Chrome v116.0.5845.187</li>
+              <li class="py-1"><span class="font-semibold">Actual result</span>: The total sum shows up $179.94</li>
+              <li class="py-1"><span class="font-semibold">Expected result</span>: The total sum should show up $359.88</li>
+              <li class="py-1"><span class="font-semibold">Environment</span>: Android emulator device</li>
               <li class="py-1"><span class="font-semibold">Attachments</span>:</li>
             </ul>
             <!-- Image -->
-            <figure>
-              <video src="videos/LUMA_bug.mp4" preload="metadata" controls>
-              </video>
-              <figcaption class="text-gray-400 text-sm">MDA bug</figcaption>
+            <figure class="flex justify-center">
+              <img src="images/projects/MyDemoApp_bug.png"/>
             </figure>
         </div>
       </div>
