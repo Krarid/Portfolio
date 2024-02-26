@@ -1226,9 +1226,9 @@ video {
   border-radius: 0.125rem;
   border-bottom-width: 4px;
   --tw-border-opacity: 1;
-  border-color: hsl(7 46% 48% / var(--tw-border-opacity));
+  border-color: hsl(0 0% 35% / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: hsl(7 100% 68% / var(--tw-bg-opacity));
+  background-color: hsl(199 20% 18% / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -1242,7 +1242,7 @@ video {
   top: 0.25rem;
   border-style: none;
   --tw-bg-opacity: 1;
-  background-color: hsl(7 46% 48% / var(--tw-bg-opacity));
+  background-color: hsl(0 0% 0% / var(--tw-bg-opacity));
 }
 
 .mobile-menu {
@@ -1578,7 +1578,7 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
+  color: rgb(57 63 86 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1440px) {
