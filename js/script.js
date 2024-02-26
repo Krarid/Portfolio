@@ -101,4 +101,9 @@ $( function() {
     $('#project3').on('mouseleave', (e) => {
         $('#project3 img').removeAttr('src').attr('src', 'images/projects/MyDemoApp.png');
     })
+
+    // Go back when pressing left arrow
+    $(".back").on('click', (e)=> {
+        window.history.back();
+    } )
 });
