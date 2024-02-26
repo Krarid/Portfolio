@@ -1226,9 +1226,9 @@ video {
   border-radius: 0.125rem;
   border-bottom-width: 4px;
   --tw-border-opacity: 1;
-  border-color: hsl(7 46% 48% / var(--tw-border-opacity));
+  border-color: hsl(0 0% 35% / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: hsl(7 100% 68% / var(--tw-bg-opacity));
+  background-color: hsl(199 20% 18% / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -1242,7 +1242,7 @@ video {
   top: 0.25rem;
   border-style: none;
   --tw-bg-opacity: 1;
-  background-color: hsl(7 46% 48% / var(--tw-bg-opacity));
+  background-color: hsl(0 0% 0% / var(--tw-bg-opacity));
 }
 
 .mobile-menu {
@@ -1578,7 +1578,7 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
+  color: rgb(57 63 86 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1440px) {
@@ -1955,6 +1955,46 @@ video {
 
 table, tr, td {
   border: 2px solid black;
+}
+
+.back {
+  background-color: black;
+  top: 85%;
+  left: 5%;
+  position: fixed;
+  border-radius: 100%;
+  display: none;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #0a0a0a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(10 10 10 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #525252 var(--tw-gradient-to-position);
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.back:hover {
+  --tw-gradient-from: #525252 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(82 82 82 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #0a0a0a var(--tw-gradient-to-position);
+}
+
+@media (min-width: 480px) {
+  .back {
+    display: block;
+  }
+}
+
+.back > i {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 12px;
+  margin: 22px 20px 18px 30px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 .hover\:rotate-360:hover {

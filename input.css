@@ -310,3 +310,24 @@
 table, tr, td {
     border: 2px solid black;
 }
+
+.back {
+    background-color: black;
+    top: 85%;
+    left: 5%;
+    position: fixed;
+    border-radius: 100%;
+
+    @apply bg-gradient-to-r hidden sm:block from-neutral-950 to-neutral-600 hover:from-neutral-600 hover:to-neutral-950 shadow-2xl;
+}
+
+.back > i {          
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 12px;
+    margin: 22px 20px 18px 30px;
+
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }

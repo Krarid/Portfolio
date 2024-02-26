@@ -3,55 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Javier Meléndez Zacarías, Portfolio, QA Automation Engineer, Cypress, OrangeHRM, Software Testing.">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet"> 
     <link rel="icon" href="images/Javi.jpeg" type="image/x-icon">
-    <title>Javier Meléndez - QA Automation Engineer</title>
+    <title>Javier Meléndez | OrangeHRM</title>
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Nav -->
-    <nav class="container pt-4 mx-auto border border-b-2 border-white">
-        <!-- Flex container for nav items -->
-        <div class="flex items-center justify-between">
-            <!-- Logo -->
-            <div class="javier-wrapper">
-                <a class="flex" href="index.html"><img src="images/Javi.jpeg" class="javier-image"/></a>
-            </div>
-            <!-- Menu Items -->
-            <div class="hidden menu-items">
-                <a href="#home" class="hover:text-salmon">Home</a>
-                <a href="#projects" class="hover:text-salmon">Projects</a>
-                <a href="#skillset" class="hover:text-salmon">Skillset</a>
-                <a href="#certifications" class="hover:text-salmon">Certifications</a>
-                <a href="#contact" class="hover:text-salmon">Contact</a>
-                <a href="resources/Javier Meléndez - QA Automation Engineer.pdf" class="resume-button">Resume</a>
-            </div>
-            <!-- Hamburger Button -->
-            <button id="menu-btn" class="hamburger">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
-        </div>
-        <div id="menu" class="hidden mobile-menu">
-            <div class="mobile-menu-item">
-                <a href="#home" class="block hover:text-salmon">Home</a>
-            </div>
-            <div class="mobile-menu-item">
-                <a href="#projects" class="block hover:text-salmon">Projects</a>
-            </div>
-            <div class="mobile-menu-item">
-                <a href="#skillset" class="block hover:text-salmon">Skillset</a>
-            </div>
-            <div class="mobile-menu-item">
-                <a href="#certifications" class="block hover:text-salmon">Certifications</a>
-            </div>
-            <div class="mobile-menu-item">
-                <a href="#contact" class="block hover:text-salmon">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Back button -->
+    <button aria-label="Return to home page" class="back"><i></i></button>
 
     <!-- Overview section -->
     <section class="project-gradient">
@@ -60,17 +21,17 @@
         <div class="flex md:flex-row flex-col-reverse text-center">
             <!-- Project description -->
             <div class="flex flex-col justify-center items-center md:w-1/2 p-10 text-black z-10 md:bg-transparent">
-                <img src="images/projects/orangehrm_logo.png"></img>
+                <img src="images/projects/orangehrm_logo.png" alt="OrangeHRM logo"></img>
                 <div class="w-full text-black border border-solid border-black my-4"></div>
                 <p class="text-base text-gray-500 lg:text-base">OrangeHRM provides a HRIS experience and offers HR Administration.</p>
-                <a href="https://github.com/Krarid/cypress-TDD" class="flex flex-row bg-stone-900 text-white mt-4 py-2 px-4 rounded-lg active:bg-black active:border-none hover:shadow-md hover:shadow-stone-500" target="_blank">
-                  <img src="images/icons/github_logo_white.png" class="flex w-20 mr-2 items-center justify-center"/>
-                  <img src="images/icons/github-mark-white.png" class="flex w-8 items-center justify-center"/>
+                <a href="https://github.com/Krarid/cypress-TDD" class="flex flex-row bg-stone-900 text-white mt-4 py-2 px-4 rounded-lg active:bg-black active:border-none hover:shadow-md hover:shadow-stone-500" target="_blank" aria-label="Go to project's GitHub">
+                  <img src="images/icons/github_logo_white.png" class="flex w-20 mr-2 items-center justify-center" alt="GitHub logo"/>
+                  <img src="images/icons/github-mark-white.png" class="flex w-8 items-center justify-center" alt="Github logo"/>
                 </a>
             </div>
             <!-- Image -->
             <div class="flex md:w-1/2 justify-center items-center">
-                <img src="images/projects/orangehrm.png" class="md:h-96 h-48">
+                <img src="images/projects/orangehrm.png" class="md:h-96 h-48" alt="OrangeHRM">
             </div>
         </div>
       </div>
@@ -86,7 +47,7 @@
             <h1 class="title-black">Test Strategy</h1>
           </div>
           <div class="project-icon">
-            <img src="images/icons/strategy.png"/>
+            <img src="images/icons/strategy.png" alt="Test Strategy"/>
           </div>
           <!-- Description -->
           <p class="pb-4 text-left">
@@ -133,7 +94,7 @@
             </div>
             <!-- Icon -->
             <div class="w-12 mx-auto mt-4">
-              <img src="images/icons/test.png"/>
+              <img src="images/icons/test.png" alt="Test Cases"/>
             </div>
             <!-- High level -->
             <div class="flex mb-4">
@@ -1115,7 +1076,7 @@
             </div>
             <!-- Icon -->
             <div class="project-icon">
-              <img src="images/icons/play.png"/>
+              <img src="images/icons/play.png" alt="Test Execution"/>
             </div>
             <!-- Description -->
             <div class="flex pb-4 text-justify">
@@ -1141,7 +1102,7 @@
             </div>
             <!-- Icon -->
             <div class="project-icon">
-              <img src="images/icons/result.png"/>
+              <img src="images/icons/result.png" alt="Test Results"/>
             </div>
             <!-- Description -->
             <div class="flex pb-10 text-justify">
@@ -1150,11 +1111,11 @@
             </div>
             <!-- Image -->
             <figure>
-              <img src="images/projects/orangehrm_results.png" />
+              <img src="images/projects/orangehrm_results.png" alt="Results"/>
               <figcaption class="text-gray-400 text-sm">Test results</figcaption>
             </figure>
             <div class="text-center mt-3 hover:shadow-sm hover:shadow-white">
-              <a href="https://cloud.cypress.io/projects/jhj3wq/runs/1/overview?roarHideRunsWithDiffGroupsAndTags=1" class="relative text-stone-500 hover:text-salmon w-full" target="_blank">See test results &#10697;</a>
+              <a href="https://cloud.cypress.io/projects/jhj3wq/runs/1/overview?roarHideRunsWithDiffGroupsAndTags=1" class="relative text-stone-500 hover:text-salmon w-full" target="_blank" aria-label="See test results">See test results &#10697;</a>
             </div>
         </div>
       </div>
@@ -1171,7 +1132,7 @@
             </div>
             <!-- Icon -->
             <div class="project-icon">
-              <img src="images/icons/toolbox.png"/>
+              <img src="images/icons/toolbox.png" alt="Tools"/>
             </div>
             <!-- Tools -->
             <div class="flex flex-wrap justify-center items-center">
@@ -1200,15 +1161,15 @@
             </div>
             <!-- Social media -->
             <div class="social-wrapper">
-                <a href="https://www.linkedin.com/in/javier-meléndez-zacarías" class="social-media" target="_blank"><img src="images/icons/linkedin.png" class="social-icon"/></a>
-                <a href="https://github.com/Krarid" class="social-media" target="_blank"><img src="images/icons/github-white.svg" class="social-icon"/></a>
-                <a href="../resources/Javier Meléndez - QA Automation Engineer.pdf" class="social-media" target="_blank"><img src="images/icons/pdf.png" class="social-icon"/></a>
-                <a href="mailto:javier.melendez.zacarias@outlook.com" class="social-media"><img src="images/icons/email.png" class="social-icon"/></a>
+              <a href="https://www.linkedin.com/in/javier-meléndez-zacarías" class="social-media" target="_blank" aria-label="Open Javier Meléndez's LinkedIn"><img src="images/icons/linkedin.png" class="social-icon" alt="Javier Meléndez's LinkedIn"/></a>
+              <a href="https://github.com/Krarid" class="social-media" target="_blank" aria-label="Open Javier Meléndez's Github"><img src="images/icons/github-white.svg" class="social-icon" alt="Javier Meléndez's Github"/></a>
+              <a href="./resources/Javier Meléndez - QA Automation Engineer.pdf" class="social-media" target="_blank" aria-label="Open Javier Meléndez's Resume"><img src="images/icons/pdf.png" class="social-icon" alt="Javier Meléndez's Resume"/></a>
+              <a href="mailto:javier.melendez.zacarias@outlook.com" class="social-media" aria-label="Open Javier Meléndez's Email"><img src="images/icons/email.png" class="social-icon" alt="Javier Meléndez's Email"/></a>
                 <!-- <a target="_blank" href="https://icons8.com/icon/XgI8ghCZqXGi/letter">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
             </div>
         </div>
         <div class="copyright">
-          <p>&copy; 2023 <a href="./index.html"> Javier Meléndez Zacarías</a></p>
+          <p>&copy; 2024 <a href="./index.html" aria-label="Go to home page"> Javier Meléndez Zacarías</a></p>
         </div>
     </footer>
 
