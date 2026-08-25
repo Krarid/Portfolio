@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Javier Meléndez Zacarías, Portfolio, QA Automation Engineer, Appium, MyDemoApp, Software Testing.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="images/Javi.jpeg" type="image/x-icon">
+    <title>Javier Meléndez | My Demo App</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Back button -->
+    <button aria-label="Return to home page" class="back"><i></i></button>
+
+    <!-- Overview section -->
+    <section class="project-gradient">
+      <div class="project-section">
+        <!-- Flex container -->
+        <div class="flex md:flex-row flex-col-reverse text-center">
+            <!-- Project description -->
+            <div class="flex flex-col justify-center items-center md:w-1/2 p-10 text-black z-10 md:bg-transparent">
+                <img src="images/projects/sauce-labs-logo.png" alt="Sauce Labs logo"></img>
+                <div class="w-full text-black border border-solid border-black my-4"></div>
+                <p class="text-base text-gray-500 lg:text-base">My Demo App is a... demo app! It was built by the Sauce Labs team to showcase product capabilities of the Sauce Labs mobile devices cloud, The Sauce Labs mobile beta testing platform, TestFairy, and more products and technologies.</p>
+                <a href="https://github.com/Krarid/cypress-TDD" class="flex flex-row bg-stone-900 text-white mt-4 py-2 px-4 rounded-lg active:bg-black active:border-none hover:shadow-md hover:shadow-stone-500" target="_blank" aria-label="Go to project's GitHub">
+                  <img src="images/icons/github_logo_white.png" class="flex w-20 mr-2 items-center justify-center" alt="GitHub logo"/>
+                  <img src="images/icons/github-mark-white.png" class="flex w-8 items-center justify-center" alt="Github logo"/>
+                </a>
+            </div>
+            <!-- Image -->
+            <div class="flex md:w-1/2 justify-center items-center">
+                <img src="images/projects/MyDemoApp-mobile.png" class="h-128" alt="My Demo App">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Strategy -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Strategy container -->
+        <div class="project-flex">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <h1 class="title-black">Test Strategy</h1>
+          </div>
+          <div class="project-icon">
+            <img src="images/icons/strategy.png" alt="Test Strategy"/>
+          </div>
+          <!-- Description -->
+          <p class="pb-4 text-left">
+            This project aims to demonstrate my skills in Automation with Appium using Java as programming language.
+            Therefore, it is for demonstration purposes. The MyDemoApp belongs to the author of <span class="font-semibold">Sauce Labs</span> which is an American cloud-hosted, web and mobile application automated testing platform company.
+          </p>
+          <p class="py-4 text-left">
+            It should be noted that not all the app functionalities were automated, the approach followed was to write test cases at a high level that offered the main functionalities of the application, in their case: add products to cart, buy products, login and drawing.             
+          </p>
+          <p class="py-4 text-left">
+            The test cases were translated into low level to detail step by step the execution of the test cases.  These test cases are grouped by test scenarios, ID, positive/negative, the type of test case (functional) and whether it is automatable or not.
+            Only functional test cases have been considered, therefore performance, usability and any non-functional test cases are out of scope.
+          </p>
+          <p class="py-4 text-left">
+            The programming language, automation framework, and document object model have been chosen for maintainability purposes and will be described below.
+            The execution of the test cases and the results are shown in later sections.
+            Finally, Jenkins is integrated for continuous integration and continuous deployment.
+          </p>
+          <ul class="flex flex-wrap list-disc">
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Author</span>: Javier Meléndez Zacarías</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Website author</span>: Sauce Labs</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Date</span>: 1/28/2024</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">URL</span>: <a href="https://github.com/saucelabs/my-demo-app-rn" aria-label="Go to My Demo App repo"> My Demo App</a></li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">JIRA</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Epic</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">User Story</span>: None</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Test cases</span>: 25</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Defects</span>: 1</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Automation</span>: Appium</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Language</span>: Java</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Framework</span>: Test Driven Development</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Framework language</span>: Espresso</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Automation model</span>: Page Object Model</li>
+            <li class="flex md:w-1/3 w-full"><span class="font-semibold">Passing score</span>: 96%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Test Cases -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Cases container -->
+        <div class="project-flex">
+            <!-- Test cases -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test cases</h1>
+            </div>
+            <!-- Icon -->
+            <div class="w-12 mx-auto mt-4">
+              <img src="images/icons/test.png" alt="Test Cases"/>
+            </div>
+            <!-- High level -->
+            <div class="flex mb-4">
+                <h1 class="subtitle">High level</h1>
+            </div>
+            <div class="overflow-x-auto grid">
+              <table class="table-auto text-center">
+                <thead>
+                  <tr class="bg-blue-400">
+                    <th>ID</th>
+                    <th>Test scenario</th>
+                    <th>Test case</th>
+                    <th>Positive / Negative</th>
+                    <th>Type</th>
+                    <th>Automatable</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MDA-1</td>
+                    <td rowspan="7" class="bg-yellow-200">Catalog</td>
+                    <td>Buy a product</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-2</td>
+                    <td>Remove an item</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-3</td>
+                    <td>Increase the cart</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-4</td>
+                    <td>Decrease the cart</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-5</td>
+                    <td>Add to cart many times</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-6</td>
+                    <td>Submit a review</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-7</td>
+                    <td>Sort products by</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-8</td>
+                    <td rowspan="2" class="bg-green-200">Webview</td>
+                    <td>Go to an external site within the app</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-9</td>
+                    <td>Verify error message when providing an incorrect https url</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-10</td>
+                    <td rowspan="3" class="bg-gray-200">Drawing</td>
+                    <td>Perform drawing action</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-11</td>
+                    <td>Clear a drawing</td>
+                    <td class="bg-green-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-12</td>
+                    <td>Save the drawing</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-13</td>
+                    <td rowspan="2" class="bg-orange-200">About</td>
+                    <td>Verify the last build</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-14</td>
+                    <td>Go to the sauce labs website external link</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-15</td>
+                    <td rowspan="2" class="bg-pink-200">Reset App State</td>
+                    <td>Reset app state</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-16</td>
+                    <td>Cancel the reset of the app state</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-17</td>
+                    <td rowspan="5" class="bg-blue-200">Login</td>
+                    <td>Login with a valid account</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-18</td>
+                    <td>Login with a locked out account</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-19</td>
+                    <td>Verify error message when username is not provided</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-20</td>
+                    <td>Verify error message when password is not provided</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-21</td>
+                    <td>Log out</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-22</td>
+                    <td rowspan="5" class="bg-green-200">API calls</td>
+                    <td>Verify list of devices in EU-DC</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-23</td>
+                    <td>Verify list of devices in US-DC</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-24</td>
+                    <td>Verify list of devices in US-DC</td>
+                    <td class="bg-green-200">Yes</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-25</td>
+                    <td>Verify 401 unauthorized error response</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>MDA-26</td>
+                    <td>Verify 404 not found error response</td>
+                    <td class="bg-red-200">No</td>
+                    <td>Functional</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Low level -->
+            <div class="flex my-4">
+                <h1 class="subtitle">Low level</h1>
+            </div>
+            <div id="low-level" class="h-96 overflow-y-hidden overscroll-x-auto grid">
+              <table class="table-auto text-center">
+                <thead>
+                  <tr class="bg-blue-800 text-white">
+                    <th>ID</th>
+                    <th>Test case</th>
+                    <th>Test Data</th>
+                    <th>Precondition</th>
+                    <th>Steps</th>
+                    <th>Expected Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-blue-300">
+                    <td>MDA-1</td>
+                    <td>Buy a product</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>1.01</td>
+                    <td></td>
+                    <td>1. Onesie </br>2. Backpack
+                    </td>
+                    <td></td>
+                    <td>Click on {Product}</td>
+                    <td>User is redirected to the product page</td>
+                  </tr>
+                  <tr>
+                    <td>1.02</td>
+                    <td></td>
+                    <td>1. Black </br>2. Blue</td>
+                    <td></td>
+                    <td>Click on a {Color}</td>
+                    <td>Color is chosen</td>
+                  </tr>
+                  <tr>
+                    <td>1.03</td>
+                    <td></td>
+                    <td>3</br>5</td>
+                    <td></td>
+                    <td>Select {Quantity} as the number of products</td>
+                    <td>Number of products has been chosen</td>
+                  </tr>
+                  <tr>
+                    <td>1.04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon at the upper right</td>
+                    <td>Cart page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>1.05</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Proceed to checkout" button</td>
+                    <td>User is redirected to the checkout page</td>
+                  </tr>
+                  <tr>
+                    <td>1.06</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>If neccesary, login</td>
+                    <td>User is redirected to the checkout page</td>
+                  </tr>
+                  <tr>
+                    <td>1.07</td>
+                    <td></td>
+                    <td>Full Name: Rebecca Winter</br>
+                      Address Line 1: Mandorley 112</br>
+                      City: Truro</br>
+                      State: Cornwall</br>
+                      Zip Code: 89750</br>
+                      Country: United Kingdom</td>
+                    <td></td>
+                    <td>Fill the shipping details and click on "to payment" button</td>
+                    <td>User is redirected to checkout page</td>
+                  </tr>
+                  <tr>
+                    <td>1.08</td>
+                    <td></td>
+                    <td>Full Name: Rebecca Winter</br>
+                      Card Number: 325812657568789</br>
+                      Expiration Date: 03/25</br>
+                      Security Code: 123</td>
+                    <td></td>
+                    <td>Fill the checkout details and click on review order</td>
+                    <td>User is redirected to the review page</td>
+                  </tr>
+                  <tr>
+                    <td>1.09</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Verify the name of the product, the color, the number of items and the total price</td>
+                    <td>All the verifications get passed</td>
+                  </tr>
+                  <tr>
+                    <td>1.10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Place Order"</td>
+                    <td>User is redirected to the checkout complete page</td>
+                  </tr>
+                  <tr>
+                    <td>1.11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Continue Shopping" button</td>
+                    <td>Verify user is redirected to the catalog page</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-2</td>
+                    <td>Remove an item</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>2.01</td>
+                    <td></td>
+                    <td>1. Bolt </br>2. Bike
+                    </td>
+                    <td></td>
+                    <td>Click on {Product}</td>
+                    <td>User is redirected to the product page</td>
+                  </tr>
+                  <tr>
+                    <td>2.02</td>
+                    <td></td>
+                    <td>1. Black </br>2. Black</td>
+                    <td></td>
+                    <td>Click on a {Color}</td>
+                    <td>Color is chosen</td>
+                  </tr>
+                  <tr>
+                    <td>2.03</td>
+                    <td></td>
+                    <td>2</br>4</td>
+                    <td></td>
+                    <td>Select {Quantity} as the number of products</td>
+                    <td>Number of products has been chosen</td>
+                  </tr>
+                  <tr>
+                    <td>2.04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon at the upper right</td>
+                    <td>Cart page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>2.05</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Remove Item"</td>
+                    <td>User is redirected to the no items page</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-3</td>
+                    <td>Increase the cart</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>3.01</td>
+                    <td></td>
+                    <td>1. allTheThings </br>2. Fleece
+                    </td>
+                    <td></td>
+                    <td>Click on {Product}</td>
+                    <td>User is redirected to the product page</td>
+                  </tr>
+                  <tr>
+                    <td>3.02</td>
+                    <td></td>
+                    <td>1. Black </br>2. Black</td>
+                    <td></td>
+                    <td>Click on a {Color}</td>
+                    <td>Color is chosen</td>
+                  </tr>
+                  <tr>
+                    <td>3.03</td>
+                    <td></td>
+                    <td>3</br>10</td>
+                    <td></td>
+                    <td>Select {Quantity} as the number of products</td>
+                    <td>Number of products has been chosen</td>
+                  </tr>
+                  <tr>
+                    <td>3.04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon at the upper right</td>
+                    <td>Cart page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>3.05</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Increase the number of items by {Quantity} for the product and verify the total price gets incremented</td>
+                    <td>The total price gets incremented</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-4</td>
+                    <td>Decrease the cart</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>4.01</td>
+                    <td></td>
+                    <td>1. allTheThings </br>2. Fleece
+                    </td>
+                    <td></td>
+                    <td>Click on {Product}</td>
+                    <td>User is redirected to the product page</td>
+                  </tr>
+                  <tr>
+                    <td>4.02</td>
+                    <td></td>
+                    <td>1. Black </br>2. Black</td>
+                    <td></td>
+                    <td>Click on a {Color}</td>
+                    <td>Color is chosen</td>
+                  </tr>
+                  <tr>
+                    <td>4.03</td>
+                    <td></td>
+                    <td>3</br>10</td>
+                    <td></td>
+                    <td>Select {Quantity} as the number of products</td>
+                    <td>Number of products has been chosen</td>
+                  </tr>
+                  <tr>
+                    <td>4.04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon at the upper right</td>
+                    <td>Cart page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>4.05</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Decrease the number of items by {Quantity} for the product and verify the total price gets incremented</td>
+                    <td>The total price gets decreased</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-5</td>
+                    <td>Add to cart many times</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>5.01</td>
+                    <td></td>
+                    <td>1. Sauce Labs Bolt T-Shirt</br>2. Sauce Labs Bike Light
+                    </td>
+                    <td></td>
+                    <td>Click on {Product}</td>
+                    <td>User is redirected to the product page</td>
+                  </tr>
+                  <tr>
+                    <td>5.02</td>
+                    <td></td>
+                    <td>2</br>3</td>
+                    <td></td>
+                    <td>Select {Quantity} as the number of products</td>
+                    <td>Number of products has been chosen</td>
+                  </tr>
+                  <tr>
+                    <td>5.03</td>
+                    <td></td>
+                    <td>3</br>3</td>
+                    <td></td>
+                    <td>Click on Add To Cart {Times} number of times</td>
+                    <td>The items are added to the cart</td>
+                  </tr>
+                  <tr>
+                    <td>5.04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon at the upper right</td>
+                    <td>Cart page gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>5.05</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Increase or decrease the number of items in the product and check that the total price increases or decreases based on the total number of items multiplied by the individual item price</td>
+                    <td>The total price is based on the total number of items multiplied by the price of each item</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-6</td>
+                    <td>Submit a review</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>6.1</td>
+                    <td></td>
+                    <td>1. Sauce Labs Backpack</br>2. Sauce Labs Bike Light</br>3. Sauce Labs Bolt T-Shirt</br>4. Sauce Labs Fleece Jacket</br>5. Sauce Labs Onesie</br>6. Test.allTheThings() T-Shirt</td>
+                    <td></td>
+                    <td>Click on {Product}</td>
+                    <td>User is redirected to the product page</td>
+                  </tr>
+                  <tr>
+                    <td>6.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on Close Modal button</td>
+                    <td>Close modal button gets closed</td>
+                  </tr>
+                  <tr>
+                    <td>6.3</td>
+                    <td></td>
+                    <td>2 stars</br>3 stars</br>4 stars</br>5 stars</br>2 stars</br>4 stars</td>
+                    <td></td>
+                    <td>Click on {Star} below the image product in order to submit a review</td>
+                    <td>Submitting modal gets opened</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-7</td>
+                    <td>Sort products by</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>7.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on sorting icon at the top right</td>
+                    <td>Sort by pop modal gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>7.2</td>
+                    <td></td>
+                    <td>1. Name - Ascending</br>
+                      2. Name - Descending</br>
+                      3. Price - Ascending</br>
+                      4. Price - Descending</td>
+                    <td></td>
+                    <td>Click on sort by {Sorting} and verify the products get sorted by {Sorting} order</td>
+                    <td>The products get sorted by selected order</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-8</td>
+                    <td>Go to an external site within the app</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>8.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>8.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Webview"</td>
+                    <td>User is redirected to the webview page</td>
+                  </tr>
+                  <tr>
+                    <td>8.3</td>
+                    <td></td>
+                    <td>https://www.javimele.com</td>
+                    <td></td>
+                    <td>Enter {Domain} as the domain name</td>
+                    <td>User is redirected to the website</td>
+                  </tr>
+                  <tr>
+                    <td>8.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Go to site" button</td>
+                    <td>User is redirected to the webview page</td>
+                  </tr>
+                  <tr>
+                    <td>8.5</td>
+                    <td></td>
+                    <td>Javier Melendez Zacarias</td>
+                    <td></td>
+                    <td>Scroll down in the website and verify the footer says {Footer}</td>
+                    <td>User is redirected to the footer of the website</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-9</td>
+                    <td>Verify error message when providing an incorrect https url</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>9.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>9.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Webview"</td>
+                    <td>User is redirected to the webview page</td>
+                  </tr>
+                  <tr>
+                    <td>9.3</td>
+                    <td></td>
+                    <td>Error</td>
+                    <td></td>
+                    <td>Enter {Domain} as the domain name</td>
+                    <td>URL field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>9.4</td>
+                    <td></td>
+                    <td>Green<br />Blue</td>
+                    <td></td>
+                    <td>Verify error message below the URL field</td>
+                    <td>Error message says "Please provide a correct https url"</td>
+                  </tr>
+                  <tr>
+                    <td>9.5</td>
+                    <td></td>
+                    <td>1<br />20</td>
+                    <td></td>
+                    <td>Type {Test Data} as quantity</td>
+                    <td>The desired quantity is selected</td>
+                  </tr>
+                  <tr>
+                    <td>9.6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on cart icon and verity the subtotal</td>
+                    <td>The subtotal is the multiplication of the quantity of items and the price of it</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-10</td>
+                    <td>Perform drawing action</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>10.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>10.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Drawing"</td>
+                    <td>User is redirected to the drawing page</td>
+                  </tr>
+                  <tr>
+                    <td>10.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Make a drawing</td>
+                    <td>User made a drawing</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-11</td>
+                    <td>Clear drawing</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>11.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>11.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Drawing"</td>
+                    <td>User is redirected to the drawing page</td>
+                  </tr>
+                  <tr>
+                    <td>11.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Make a drawing</td>
+                    <td>User made a drawing</td>
+                  </tr>
+                  <tr>
+                    <td>11.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Clear"</td>
+                    <td>The drawing was cleaned</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-12</td>
+                    <td>Save the drawing</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>12.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>12.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Drawing"</td>
+                    <td>User is redirected to the drawing page</td>
+                  </tr>
+                  <tr>
+                    <td>12.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Make a drawing</td>
+                    <td>User made a drawing</td>
+                  </tr>
+                  <tr>
+                    <td>12.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Save"</td>
+                    <td>Save drawing modal gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>12.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "OK" on the recently opened modal</td>
+                    <td>Modal gets closed</td>
+                  </tr>
+                  <tr>
+                    <td>12.6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Verify the image got saved in the gallery</td>
+                    <td>The image got saved in the gallery</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-13</td>
+                    <td>Verify the last build</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>13.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>13.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "About"</td>
+                    <td>User is redirected to the about page</td>
+                  </tr>
+                  <tr>
+                    <td>13.3</td>
+                    <td></td>
+                    <td>V.1.3.0-build 244</td>
+                    <td></td>
+                    <td>Verify the last build is {Build}</td>
+                    <td>The last build is as per test data</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-14</td>
+                    <td>Go to the sauce labs website external link</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>14.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>14.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "About"</td>
+                    <td>User is redirected to the about page</td>
+                  </tr>
+                  <tr>
+                    <td>14.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Go to the Sauce Labs website." and verify the user is redirected to the Sauce Labs website</td>
+                    <td>User is redirected to the Sauce Labs website</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-15</td>
+                    <td>Reset app state</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>15.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>15.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Reset App State"</td>
+                    <td>Modal gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>15.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Reset App" option</td>
+                    <td>App State modal gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>15.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "OK" button</td>
+                    <td>App State modal gets closed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-16</td>
+                    <td>Cancel the reset of the app state</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>16.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>16.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Reset App State"</td>
+                    <td>Modal gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>16.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "CANCEL" button</td>
+                    <td>Modal gets closed</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-17</td>
+                    <td>Login with a valid account</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>17.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>17.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Log In"</td>
+                    <td>User is redirected to the login page</td>
+                  </tr>
+                  <tr>
+                    <td>17.3</td>
+                    <td></td>
+                    <td>bob@example.com</td>
+                    <td></td>
+                    <td>Enter {Username} as username</td>
+                    <td>Username field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>17.4</td>
+                    <td></td>
+                    <td>10203040</td>
+                    <td></td>
+                    <td>Enter {Password} as password</td>
+                    <td>Password gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>17.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Login" button</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-18</td>
+                    <td>Login with a locked out account</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>18.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>18.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Log In"</td>
+                    <td>User is redirected to the login page</td>
+                  </tr>
+                  <tr>
+                    <td>18.3</td>
+                    <td></td>
+                    <td>alice@example.com</td>
+                    <td></td>
+                    <td>Enter {Username} as username</td>
+                    <td>Username field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>18.4</td>
+                    <td></td>
+                    <td>10203040</td>
+                    <td></td>
+                    <td>Enter {Password} as password</td>
+                    <td>Password gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>18.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Login" button</td>
+                    <td>Error message says "Sorry, this user has been locked out"</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-19</td>
+                    <td>Verify error message when username is not provided</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>19.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>19.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Log In"</td>
+                    <td>User is redirected to the login page</td>
+                  </tr>
+                  <tr>
+                    <td>19.4</td>
+                    <td></td>
+                    <td>10203040</td>
+                    <td></td>
+                    <td>Enter {Password} as password</td>
+                    <td>Password gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>19.5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Login" button</td>
+                    <td>Error message below username says "Username is required"</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-20</td>
+                    <td>Verify error message when password is not provided</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>20.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>20.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Log In"</td>
+                    <td>User is redirected to the login page</td>
+                  </tr>
+                  <tr>
+                    <td>20.3</td>
+                    <td></td>
+                    <td>bob@example.com</td>
+                    <td></td>
+                    <td>Enter {Username} as username</td>
+                    <td>Username field gets filled</td>
+                  </tr>
+                  <tr>
+                    <td>20.4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Login" button</td>
+                    <td>Error message below password says "Password is required"</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-21</td>
+                    <td>Log out</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>21.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>21.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Log Out"</td>
+                    <td>Log Out modal gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>21.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Log Out" in modal</td>
+                    <td>Logged out modal gets opened</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-22</td>
+                    <td>Verify list of devices in EU-DC</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>22.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>22.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Api Calls"</td>
+                    <td>User is redirected to the Api Calls page</td>
+                  </tr>
+                  <tr>
+                    <td>22.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "EU-DC" tab and verify the HTTP response is successful</td>
+                    <td>HTTP response is successful</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-23</td>
+                    <td>Verify list of devices in US-DC</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>23.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>23.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Api Calls"</td>
+                    <td>User is redirected to the Api Calls page</td>
+                  </tr>
+                  <tr>
+                    <td>23.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "US-DC" tab and verify the HTTP response is successful</td>
+                    <td>HTTP response is successful</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-24</td>
+                    <td>Verify 401 unauthorized error response</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>24.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>24.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Api Calls"</td>
+                    <td>User is redirected to the Api Calls page</td>
+                  </tr>
+                  <tr>
+                    <td>24.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "401" tab and verify the HTTP response is unauthorized</td>
+                    <td>HTTP response is unathorized</td>
+                  </tr>
+                  <tr class="bg-blue-300">
+                    <td>MDA-25</td>
+                    <td>Verify 404 not found error response</td>
+                    <td></td>
+                    <td>User should have accessed to MyDemoApp</td>
+                    <td>Launch MyDemoApp</td>
+                    <td>User is redirected to the catalog page</td>
+                  </tr>
+                  <tr>
+                    <td>25.1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on hamburger icon at the top left</td>
+                    <td>Menu gets opened</td>
+                  </tr>
+                  <tr>
+                    <td>25.2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "Api Calls"</td>
+                    <td>User is redirected to the Api Calls page</td>
+                  </tr>
+                  <tr>
+                    <td>25.3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Click on "404" tab and verify the HTTP response is not found</td>
+                    <td>HTTP response is not found</td>
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="text-center mt-3 hover:shadow-sm hover:shadow-white">
+              <button id="see-more" class="relative text-stone-500 hover:text-blue-800 w-full">See more &#8595;</button>
+            </div>
+            <div class="text-center mt-3 hidden">
+              <button id="see-less" class="relative text-stone-500 hover:text-blue-800 w-full">See less &#8593;</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Object Model -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Page Object Model container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Page Object Model</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/diagram.png" alt="Page Object Model"/>
+            </div>
+            <!-- Description -->
+            <p class="flex pb-10 text-justify">
+              Page Object Model, also known as POM, is a design pattern in Selenium that creates an object repository for storing all web elements. It helps reduce code duplication and improves test case maintenance.
+              In Page Object Model, consider each web page of an application as a class file. Each class file will contain only corresponding web page elements. Using these elements, testers can perform operations on the website under test.
+            </p>
+            <!-- Image -->
+            <figure>
+              <img src="images/projects/MyDemoApp_POM.png" alt="UML"/>
+              <figcaption class="text-gray-400 text-sm">Page Object Model</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Test Execution -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Execution container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test Execution</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/play.png" alt="Test Execution"/>
+            </div>
+            <!-- Description -->
+            <div class="flex pb-4 text-justify">
+              The project was executed using Eclipse IDE as Java development environment and Android Studio as Android device emulator.
+            </div>
+            <!-- Image -->
+            <div>
+              <video src="videos/MyDemoApp.mp4" preload="metadata" controls>
+              </video>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Results -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Test Results container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Test Results</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/result.png" alt="Test Results"/>
+            </div>
+            <!-- Description -->
+            <div class="flex pb-10 text-justify">
+              The pass rate for the 25 test cases was 96%, with 4% being a failed test case. Run time was 5 minutes and 57 seconds. 
+            </div>
+            <!-- <iframe src="report.html" class="h-96 overflow-auto"></iframe> -->
+            <!-- Image -->
+            <figure>
+              <img src="images/projects/MyDemoApp_results.png" alt="Results"/>
+              <figcaption class="text-gray-400 text-sm">Test results</figcaption>
+            </figure>
+            <div class="text-center mt-3 hover:shadow-sm hover:shadow-white">
+              <a href="./resources/index.html" class="relative text-stone-500 hover:text-salmon w-full" target="_blank" aria-label="See test results">See test results &#10697;</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Defects -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Defects container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Defects</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/bug.png" alt="Defects"/>
+            </div>
+            <!-- Description -->
+            <ul class="list-disc ml-12">
+              <li class="py-1"><span class="font-semibold">Summary</span>: The sum of an item added to the cart several times is incorrect.</li>
+              <li class="py-1"><span class="font-semibold">Description</span>: Increasing the number of items to purchase for an item and adding it to the cart several times causes the total sum to be incorrect.</li>
+              <li class="py-1"><span class="font-semibold">Steps</span>: 
+                <ul class="list-decimal ml-12">
+                  <li>Launch MyDemoApp</li>
+                  <li>Click on "Sauce Labs Backpack"</li>
+                  <li>Increase the count to 3</li>
+                  <li>Click on "Add to Cart button" 4 times</li>
+                  <li>Click on cart icon at the upper right</li>
+                  <li>Verify that the total sum is $359.88 as the individual item price is $29.99 multiplied by the total number of items which is 12.</li>
+                </ul>
+              </li>
+              <li class="py-1"><span class="font-semibold">Actual result</span>: The total sum shows up $179.94</li>
+              <li class="py-1"><span class="font-semibold">Expected result</span>: The total sum should show up $359.88</li>
+              <li class="py-1"><span class="font-semibold">Environment</span>: Android emulator device</li>
+              <li class="py-1"><span class="font-semibold">Attachments</span>:</li>
+            </ul>
+            <!-- Image -->
+            <figure class="flex justify-center">
+              <img src="images/projects/MyDemoApp_bug.png" alt="My Demo App bug"/>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools used -->
+    <section class="project-shadow project-gradient">
+      <div class="project-section">
+        <!-- Defects container -->
+        <div class="project-flex">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-black">Tools</h1>
+            </div>
+            <!-- Icon -->
+            <div class="project-icon">
+              <img src="images/icons/toolbox.png" alt="Tools"/>
+            </div>
+            <!-- Tools -->
+            <div class="flex flex-wrap justify-center items-center">
+              <p class="tool">Java</p>
+              <p class="tool">Selenium</p>
+              <p class="tool">Eclipse</p>
+              <p class="tool">Page Object Model</p>
+              <p class="tool">Cucumber</p>
+              <p class="tool">Gerkhin</p>
+              <p class="tool">Behavior Driven Development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer id="contact">
+        <!-- Footer container -->
+        <div class="footer-container">
+            <!-- Title -->
+            <div class="title-wrapper">
+                <h1 class="title-white">Contact</h1>
+            </div>
+            <!-- Message -->
+            <div class="flex mt-8">
+                <h1 class="text-white">Feel free to drop me a message!</h1>
+            </div>
+            <!-- Social media -->
+            <div class="social-wrapper">
+              <a href="https://www.linkedin.com/in/javier-meléndez-zacarías" class="social-media" target="_blank" aria-label="Open Javier Meléndez's LinkedIn"><img src="images/icons/linkedin.png" class="social-icon" alt="Javier Meléndez's LinkedIn"/></a>
+              <a href="https://github.com/Krarid" class="social-media" target="_blank" aria-label="Open Javier Meléndez's Github"><img src="images/icons/github-white.svg" class="social-icon" alt="Javier Meléndez's Github"/></a>
+              <a href="./resources/Javier Meléndez - QA Automation Engineer.pdf" class="social-media" target="_blank" aria-label="Open Javier Meléndez's Resume"><img src="images/icons/pdf.png" class="social-icon" alt="Javier Meléndez's Resume"/></a>
+              <a href="mailto:javier.melendez.zacarias@outlook.com" class="social-media" aria-label="Open Javier Meléndez's Email"><img src="images/icons/email.png" class="social-icon" alt="Javier Meléndez's Email"/></a>
+                <!-- <a target="_blank" href="https://icons8.com/icon/XgI8ghCZqXGi/letter">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+            </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 <a href="./index.html" aria-label="Go to home page"> Javier Meléndez Zacarías</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</body>
+</html>
