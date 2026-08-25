@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home4/javimel1/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp luma.html $DEPLOYPATH
+    - /bin/cp mydemoapp.html $DEPLOYPATH
+    - /bin/cp orangehrm.html $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R resources $DEPLOYPATH
+    - /bin/cp -R videos $DEPLOYPATH
